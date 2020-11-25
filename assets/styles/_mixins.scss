@@ -1,0 +1,30 @@
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin input-field {
+    display: inline-block;
+    background-color: white;
+    color: $med-blue;
+    border-radius: $s-corner;
+    ::placeholder {
+        font: $caption;
+    }
+    svg {
+        position: absolute;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+    input[type=text] {
+        padding: .25rem;
+        background: none;
+        border-radius: $s-corner;
+    }
+}
