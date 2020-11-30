@@ -1,9 +1,9 @@
 <template>
     <div>
-        <label class="container" v-for="(option, o) in options" :key="o"> {{ option }}
+        <label class="container" v-for="(option, o) in options" :key="o">
             <input type="checkbox" :id="o" :value="option" v-model="checkedOptions">
-            <fa class="checked" icon="check-square" />
-            <fa class="unchecked" icon="square" />
+            <div class="checked"><fa icon="check-square" />{{ option }}</div>
+            <div class="unchecked"><fa icon="square" />{{ option }}</div>
         </label>
         <!-- <br>
         <p>Checked: {{ checkedOptions }}</p> -->
@@ -24,6 +24,7 @@ export default {
 /* The container */
 .container {
     display: block;
+    max-width: 12rem;
     position: relative;
     padding-left: 2rem;
     margin-bottom: .5rem;
@@ -63,7 +64,12 @@ svg {
 /* Show checkmark when the checkbox is checked */
 .container input:checked ~ .checked {
     display: block;
-    color: $med-blue;
+    svg {
+        color: $med-blue;
+    }
+    &:hover {
+        color: $bluish-grey;
+    }
 }
 /* Hide checkmark when the checkbox is unchecked */
 .container input:checked ~ .unchecked {

@@ -92,7 +92,7 @@ footer {
     height: 27rem;
     background: $med-blue;
     color: $bluish-grey;
-    padding: 2.5rem 0 1rem;
+    padding: 2.5rem 3rem 1rem;
     position: relative;
     bottom: 0;
 }
@@ -105,10 +105,18 @@ footer {
     nav {
         display: grid;
         grid-gap: 3rem;
-        grid-template-columns: 11rem 8rem 7rem 10rem;
+        grid-template-columns: 10rem 8rem 7rem 12rem;
         margin-bottom: 2rem;
         .menu-item {
             color: white;
+            &:hover {
+                background: $bluish-grey;
+                border-radius: $s-corner;
+                position:relative;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                left: -1rem;
+            }
         }
     }
     .subscribe {
@@ -139,6 +147,9 @@ footer {
                 border-radius: $s-corner;
                 color: $med-blue;
                 background-color: $bluish-grey;
+                &:hover {
+                    background-color: $light-blue;
+                }
             }
         }
     }
@@ -147,7 +158,6 @@ footer {
     }
 }
 .right-container {
-    width: 19.5rem;
     position: absolute;
     right: 3rem;
     .social {
@@ -158,6 +168,9 @@ footer {
         svg {
             width: 2rem;
             height: 2rem;
+            &:hover {
+                color: $light-blue;
+            }
         }
     }
     hr {
