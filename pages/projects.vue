@@ -121,6 +121,7 @@ export default {
     async beforeMount() {
         try {
             this.updateVisibleProjects();
+            console.log(this.visibleProjects);
         } catch (err) {
             console.log(err);
         }
