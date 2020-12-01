@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-show="visibleSlide === index">
         <slot>
             <div>
                 <h1>{{ title }}</h1>
@@ -18,7 +18,7 @@
 <script>
 export default {
     name: "CarouselSlide",
-    props: ["title", "description", "link", "imageSource", "imageCaption", "imageCredits"]
+    props: ["title", "description", "link", "imageSource", "imageCaption", "imageCredits", "visibleSlide", "index"]
 }
 </script>
 

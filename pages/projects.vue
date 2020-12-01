@@ -63,16 +63,11 @@
             <section id="resources">
                 <div>
                     <h1>Additional Resources</h1>
-                    <Carousel>
-                        <CarouselSlide v-for="(slide, i) in slides" :key="i" :index="i" 
-                            :title="slide.title"
-                            :description="slide.description"
-                            :link="slide.link"
-                            :imageSource="slide.imageSource"
-                            :imageCaption="slide.imageCaption"
-                            :imageCredits="slide.imageCredits"
-                        />
-                    </Carousel>
+                    <Carousel 
+                        :items="['For Educators', 'For Students', 'For Researchers']"
+                        :visibleSlide="visibleSlide"
+                        :slides="slides"
+                    />
                 </div>
             </section>
         </div>
@@ -86,7 +81,6 @@ import Multiselect from "vue-multiselect";
 import projectsJson from "~/json/projects.json";
 import Pagination from "~/components/Pagination.vue";
 import Carousel from "~/components/Carousel.vue";
-import CarouselSlide from "~/components/CarouselSlide.vue";
 
 export default {
     head() {
@@ -107,7 +101,6 @@ export default {
         Multiselect,
         Pagination,
         Carousel,
-        CarouselSlide
     },
     methods: {
         // Update the page number
@@ -213,7 +206,7 @@ export default {
                     imageCredits: ""
                 }
             },
-            visibleSlide: 0,
+            visibleSlide: 1,
         }
     }
 }
@@ -345,8 +338,8 @@ export default {
         }
     }
     #resources {
-        div {
-            // height: 50rem;
+        h1 {
+            margin-left: 16rem;
         }
     }
 }
