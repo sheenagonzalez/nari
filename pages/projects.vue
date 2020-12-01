@@ -118,8 +118,12 @@ export default {
         }
     },
     // Show first page of projects upon page load
-    beforeMount: function() {
-        this.updateVisibleProjects();
+    async beforeMount() {
+        try {
+            this.updateVisibleProjects();
+        } catch (err) {
+            console.log(err);
+        }
     },
     data() {
         return {
@@ -181,29 +185,32 @@ export default {
                 "Other"
             ],
             slides: {
-                educators: {
+                0: {
+                    for: "educators",
                     title: "Lorem ipsum dolor est",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     link: "",
-                    imageSource: "~/assets/img/plane-2.png",
-                    imageCaption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    imageCredits: ""
+                    fileName: "plane-2.png",
+                    caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    credits: ""
                 },
-                students: {
+                1: {
+                    for: "students",
                     title: "University Leadership Initiative",
                     description: "This initiative allows universities and university-led partnerships to provide strategic leadership that advances ARMD’s research objectives and promotes education of the next generation of engineers.",
                     link: "",
-                    imageSource: "~/assets/img/uli.png",
-                    imageCaption: "ULI students from Carnegie Mellon University stands in front of a sophisticated 3D printer they will use to explore new methods for manufacturing aircraft components.",
-                    imageCredits: ""
+                    fileName: "uli.png",
+                    caption: "ULI students from Carnegie Mellon University stands in front of a sophisticated 3D printer they will use to explore new methods for manufacturing aircraft components.",
+                    credits: ""
                 },
-                researchers: {
+                2: {
+                    for: "researchers",
                     title: "Lorem ipsum dolor est",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     link: "",
-                    imageSource: "~/assets/img/plane-2.png",
-                    imageCaption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    imageCredits: ""
+                    fileName: "plane-2.png",
+                    caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    credits: ""
                 }
             },
             visibleSlide: 1,
@@ -264,9 +271,6 @@ export default {
 </style>
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@300;400;600&display=swap');
-@import "@/assets/styles/_variables.scss";
-@import "@/assets/styles/_mixins.scss";
 
 .background {
     z-index: -1;

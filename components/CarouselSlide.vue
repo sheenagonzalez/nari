@@ -1,5 +1,5 @@
 <template>
-    <div v-show="visibleSlide === index">
+    <div v-show="visibleSlide == index">
         <slot>
             <div>
                 <h1>{{ title }}</h1>
@@ -7,7 +7,7 @@
                 <button>Learn more ></button>
             </div>
             <div>
-                <img :src="imageSource" />
+                <img v-bind:src="~/assets/img/ + 'imageSource'" />
                 <p class="caption">{{ imageCaption }}</p>
                 <p class="caption">{{ imageCredits }}</p>
             </div>

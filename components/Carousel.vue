@@ -6,14 +6,14 @@
             <button v-bind:class="[visibleSlide == i ? 'current' : '']" v-on:click="updateVisibleSlide(i)">{{ name }}</button>
         </nav>
         <div class="card">
-            <CarouselSlide v-for="(slide, i) in slides" :key="i" 
+            <CarouselSlide v-for="(slide, i) in slides" :key="i"
                 :index="i"
                 :title="slide.title"
                 :description="slide.description"
                 :link="slide.link"
-                :imageSource="slide.imageSource"
-                :imageCaption="slide.imageCaption"
-                :imageCredits="slide.imageCredits"
+                :imageSource="slide.fileName"
+                :imageCaption="slide.caption"
+                :imageCredits="slide.credits"
                 :visibleSlide="visibleSlide"
             />
         </div>
