@@ -15,6 +15,12 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
+  styleResources: {
+    scss: [
+        '~/assets/styles/_mixins.scss',
+        '~/assets/styles/_variables.scss'
+      ]
+  },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
@@ -27,7 +33,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
   ],
 
   // Font awesome icons
@@ -44,6 +50,7 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/style-resources',
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

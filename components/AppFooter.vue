@@ -82,8 +82,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/_variables.scss";
-@import "@/assets/styles/_mixins.scss";
 
 footer {
     @include row;

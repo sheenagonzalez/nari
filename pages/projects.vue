@@ -216,8 +216,6 @@ export default {
 /* Imports default vue-multiselect style */
 </style>
 <style lang="scss"> /* Customizes vue-multiselect style */
-@import "@/assets/styles/_variables.scss";
-@import "@/assets/styles/_mixins.scss";
 
 .multiselect {
     max-width: 12rem;

@@ -33,8 +33,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/_variables.scss";
-@import "@/assets/styles/_mixins.scss";
 nav {
     @include row;
     width: 100%;

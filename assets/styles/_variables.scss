@@ -1,46 +1,4 @@
 // Fonts
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: bold;
-    font-weight: 700;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-}
-@font-face {
-    font-family: 'Rubik';
-    font-style: lighter;
-    font-weight: 300;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-}
-@font-face {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
-}
-@font-face {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-}
-@font-face {
-    font-family: 'Rubik', sans-serif;
-    font-style: bold;
-    font-weight: 600;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
-}
 $headline-bold: bold 2.75rem "Open Sans", sans-serif;
 $headline: 2.75rem "Open Sans", sans-serif;
 $subheadline-bold: bold 1.25rem "Open Sans", sans-serif;
