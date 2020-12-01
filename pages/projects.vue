@@ -62,7 +62,17 @@
             </section>
             <section id="resources">
                 <div>
-                    <!-- Additional Resources -->
+                    <h1>Additional Resources</h1>
+                    <Carousel>
+                        <CarouselSlide v-for="(slide, i) in slides" :key="i" :index="i" 
+                            :title="slide.title"
+                            :description="slide.description"
+                            :link="slide.link"
+                            :imageSource="slide.imageSource"
+                            :imageCaption="slide.imageCaption"
+                            :imageCredits="slide.imageCredits"
+                        />
+                    </Carousel>
                 </div>
             </section>
         </div>
@@ -75,6 +85,8 @@ import Checkbox from "~/components/Checkbox.vue";
 import Multiselect from "vue-multiselect";
 import projectsJson from "~/json/projects.json";
 import Pagination from "~/components/Pagination.vue";
+import Carousel from "~/components/Carousel.vue";
+import CarouselSlide from "~/components/CarouselSlide.vue";
 
 export default {
     head() {
@@ -94,6 +106,8 @@ export default {
         Checkbox,
         Multiselect,
         Pagination,
+        Carousel,
+        CarouselSlide
     },
     methods: {
         // Update the page number
@@ -173,6 +187,33 @@ export default {
                 "Ultra-Efficient Commercial Vehicles",
                 "Other"
             ],
+            slides: {
+                educators: {
+                    title: "Lorem ipsum dolor est",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    link: "",
+                    imageSource: "~/assets/img/plane-2.png",
+                    imageCaption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    imageCredits: ""
+                },
+                students: {
+                    title: "University Leadership Initiative",
+                    description: "This initiative allows universities and university-led partnerships to provide strategic leadership that advances ARMD’s research objectives and promotes education of the next generation of engineers.",
+                    link: "",
+                    imageSource: "~/assets/img/uli.png",
+                    imageCaption: "ULI students from Carnegie Mellon University stands in front of a sophisticated 3D printer they will use to explore new methods for manufacturing aircraft components.",
+                    imageCredits: ""
+                },
+                researchers: {
+                    title: "Lorem ipsum dolor est",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    link: "",
+                    imageSource: "~/assets/img/plane-2.png",
+                    imageCaption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    imageCredits: ""
+                }
+            },
+            visibleSlide: 0,
         }
     }
 }
@@ -219,10 +260,20 @@ export default {
     &__strong {
         font: $caption;
     }
+    &__input::placeholder, &__placeholder {
+        font: $caption;
+        color: $bluish-grey;
+    }
+    &__placeholder {
+        margin-top: .125rem;
+        margin-left: .31rem;
+        letter-spacing: 0;
+    }
 }
 </style>
 
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@300;400;600&display=swap');
 @import "@/assets/styles/_variables.scss";
 @import "@/assets/styles/_mixins.scss";
 
@@ -270,7 +321,6 @@ export default {
                     padding-left: 2rem;
                     &::placeholder {
                         color: $bluish-grey;
-                        font-style: italic;
                     }
                 }
             }
