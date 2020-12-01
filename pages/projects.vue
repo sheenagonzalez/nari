@@ -118,7 +118,7 @@ export default {
         }
     },
     // Show first page of projects upon page load
-    async beforeMount() {
+    async created() {
         try {
             this.updateVisibleProjects();
             console.log(this.visibleProjects);
