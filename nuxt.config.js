@@ -14,6 +14,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/fonts/open_sans/open_sans.css',
+    '~/assets/fonts/rubik/rubik.css'
   ],
   styleResources: {
     scss: [

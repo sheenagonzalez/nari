@@ -47,19 +47,6 @@ export default {
         withinRange(amt) {
             return (amt - 1 < Math.floor(this.limit/2));
         }
-        //                         forwardamt     totalpages = 20
-
-        // < 15 16 17 18 19 >      1 2
-        //         ^17
-
-        // < 16 17 18 19 20 >      1 2
-        //         ^18
-
-        // < 16 17 18 19 20 >      1
-        //             ^19
-
-        // < 16 17 18 19 20 >      X
-        //                ^20
     },
 }
 </script>
