@@ -78,6 +78,7 @@
 export default {
     name: "AppFooter",
     props: ["resources", "partners", "events", "support"],
+    mixins: ["row", "input-field"]
 }
 </script>
 
@@ -85,7 +86,6 @@ export default {
 
 footer {
     @include row;
-    align-items: initial;
     width: 100%;
     height: 27rem;
     background: $med-blue;

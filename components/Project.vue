@@ -77,7 +77,7 @@ export default {
 .card {
     background-color: white;
     border-radius: $m-corner;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     margin: 1rem 0;
     cursor: pointer;
     h1 {
@@ -92,7 +92,7 @@ export default {
     .button {
         text-align: right;
         position: absolute;
-        right: 7rem;
+        right: 6.5rem;
         color: $med-blue;
         svg {
             width: 1.5rem;

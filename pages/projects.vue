@@ -121,7 +121,6 @@ export default {
     async created() {
         try {
             this.updateVisibleProjects();
-            console.log(this.visibleProjects);
         } catch (err) {
             console.log(err);
         }
@@ -197,12 +196,12 @@ export default {
                 },
                 1: {
                     for: "students",
-                    title: "University Leadership Initiative",
+                    title: "University Leadership Initiative (ULI)",
                     description: "This initiative allows universities and university-led partnerships to provide strategic leadership that advances ARMD’s research objectives and promotes education of the next generation of engineers.",
-                    link: "",
+                    link: "https://nari.arc.nasa.gov/uli",
                     fileName: "uli.png",
-                    caption: "ULI students from Carnegie Mellon University stands in front of a sophisticated 3D printer they will use to explore new methods for manufacturing aircraft components.",
-                    credits: ""
+                    caption: "ULI students from Carnegie Mellon University stand in front of a sophisticated 3D printer they will use to explore new methods for manufacturing aircraft components.",
+                    credits: "Anthony Rollett, CMU"
                 },
                 2: {
                     for: "researchers",
@@ -279,7 +278,6 @@ export default {
     margin-top: -8rem;
 }
 .main {
-    margin: 3rem 5rem 6rem;
     h1 {
     font: $headline-bold;
     }
@@ -291,6 +289,7 @@ export default {
         font: $subheadline;
     }
     #projects {
+        margin: 3rem 5rem;
         display: flex;
         .sticky-nav {
             position: -webkit-sticky;
@@ -341,8 +340,10 @@ export default {
         }
     }
     #resources {
+        margin: 6rem 0 6rem;
         h1 {
-            margin-left: 16rem;
+            margin-left: 21rem;
+            margin-bottom: 1rem;
         }
     }
 }

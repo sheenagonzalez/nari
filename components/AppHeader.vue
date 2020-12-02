@@ -35,6 +35,7 @@ export default {
 <style scoped lang="scss">
 nav {
     @include row;
+    align-items: center;
     width: 100%;
     height: 4rem;
     background: $med-blue;
@@ -45,6 +46,7 @@ nav {
     }
     .right-container {
         @include row;
+        align-items: center;
         position: absolute;
         right: 3rem;
         .menu {
