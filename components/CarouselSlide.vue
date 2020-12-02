@@ -7,9 +7,9 @@
                 <button>Learn more ></button>
             </div>
             <div>
-                <img v-bind:src="~/assets/img/ + 'imageSource'" />
-                <p class="caption">{{ imageCaption }}</p>
-                <p class="caption">{{ imageCredits }}</p>
+                <img v-bind:src="~/assets/img/ + 'fileName'" />
+                <p class="caption">{{ caption }}</p>
+                <p class="caption">{{ credits }}</p>
             </div>
         </slot>
     </div>
@@ -18,7 +18,7 @@
 <script>
 export default {
     name: "CarouselSlide",
-    props: ["title", "description", "link", "imageSource", "imageCaption", "imageCredits", "visibleSlide", "index"]
+    props: ["title", "description", "link", "fileName", "caption", "credits", "visibleSlide", "index"]
 }
 </script>
 

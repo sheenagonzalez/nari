@@ -11,9 +11,9 @@
                 :title="slide.title"
                 :description="slide.description"
                 :link="slide.link"
-                :imageSource="slide.fileName"
-                :imageCaption="slide.caption"
-                :imageCredits="slide.credits"
+                :fileName="slide.fileName"
+                :caption="slide.caption"
+                :credits="slide.credits"
                 :visibleSlide="visibleSlide"
             />
         </div>
