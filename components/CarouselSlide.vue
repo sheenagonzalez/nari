@@ -55,7 +55,7 @@ export default {
 .fade-enter,
 .fade-leave-to {
     opacity: 0;
-    transform: translate(3rem, 0);
+    transform: translate(-3rem, 0);
     transition: all 0s,
 }
 .slide {

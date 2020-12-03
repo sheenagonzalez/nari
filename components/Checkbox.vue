@@ -1,19 +1,28 @@
 <template>
     <div>
         <label class="container" v-for="(option, o) in options" :key="o">
-            <input type="checkbox" :id="o" :value="option" v-model="checkedOptions">
+            <input type="checkbox" :id="o" :value="option" v-model="model" />
             <div class="checked"><fa icon="check-square" />{{ option }}</div>
             <div class="unchecked"><fa icon="square" />{{ option }}</div>
         </label>
-        <!-- <br>
-        <p>Checked: {{ checkedOptions }}</p> -->
     </div>
 </template>
 
 <script>
 export default {
     name: "Checkbox",
-    props: ["options", "checkedOptions"],
+    props: ["options", "checkedOptions", "value"],
+    data() {
+        return {
+            model: this.value
+        }
+    },
+    watch: {
+        model: function(val) {
+            this.$emit("input", val)
+        }
+    }
+
 }
 </script>
 

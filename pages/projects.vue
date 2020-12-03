@@ -11,14 +11,14 @@
                             <h2>Search</h2>
                             <div class="search">
                                 <fa icon="search" />
-                                <input type="text" placeholder="Enter keywords here.." />
+                                <input type="text" v-model="search" placeholder="Enter keywords here.." />
                             </div>
                         </div>
                         <div class="filter">
                             <h2>Filters</h2>
                             <div>
                                 <p class="filter-title">Programs</p>
-                                <Checkbox :options="programList" :checkedOptions="programList" />
+                                <Checkbox :options="programList" :checkedOptions="checkedPrograms" v-model="checkedPrograms" @input="filterProjects" />
                             </div>
                             <div>
                                 <p class="filter-title">Discipline Area</p>
@@ -31,6 +31,7 @@
                                     :max-height="150"
                                     :show-labels="false"
                                     :limit="3"
+                                    @input="updateVisibleProjects"
                                     placeholder="Select">
                                 </multiselect>
                             </div>
@@ -110,23 +111,52 @@ export default {
         },
         // Update which projects to show according to current page number
         updateVisibleProjects() {
-            this.visibleProjects = this.projectsData.slice(this.currentPage * this.pageSize, (this.currentPage * this.pageSize) + this.pageSize);
+            this.filterProjects();
+            this.visibleProjects = this.filteredProjects.slice(this.currentPage * this.pageSize, (this.currentPage * this.pageSize) + this.pageSize);
             // Go back a page if we have 0 visible projects
             if (this.visibleProjects.length == 0 && this.currentPage > 0) {
                 this.updatePage(this.currentPage - 1);
             }
+        },
+        filterProjects() {
+            var results = this.projectsData.filter((project) => {
+                var tagMatched = this.selectedTags.length == 0;
+                if (!tagMatched && project.tags) {
+                    for (var selectedTagIndex in this.selectedTags) {
+                        tagMatched = this.selectedTags[selectedTagIndex].match(project.tags);
+                        if (tagMatched) {
+                            break;
+                        }
+                    }
+                }
+                // var programMatched = false;
+                // console.log(project.projecttype);
+                // console.log(this.checkedPrograms);
+                // console.log("----");
+                // Show projects that match checked programs
+                // programMatched = this.checkedPrograms.match(project.projecttype);
+                // console.log(this.checkedPrograms.match(project.projecttype));
+                // Show projects that match search keywords
+                // var searchMatched = false;
+                // searchMatched = (project.title.match(this.search) || project.title.toLowerCase().match(this.search.toLowerCase()));
+                // console.log(this.search);
+                return tagMatched;
+            });
+            this.filteredProjects = results;
         }
     },
     // Show first page of projects upon page load
     async created() {
         try {
             this.updateVisibleProjects();
+            this.checkedPrograms = this.programList.flat();
         } catch (err) {
             console.log(err);
         }
     },
     data() {
         return {
+            search: '',
             programList: [
                 "The LEARN Project", 
                 "Seedling Fund"
@@ -135,7 +165,9 @@ export default {
             pageSize: 7,
             currentPage: 0,
             visibleProjects: [],
+            checkedPrograms: [],
             selectedTags: [],
+            filteredProjects: [],
             // Discipline Area tags
             tagList: [
                 "Aeroacoustics",
@@ -341,6 +373,7 @@ export default {
     }
     #resources {
         margin: 6rem 0 6rem;
+        min-height: 36rem;
         h1 {
             margin-left: 21rem;
             margin-bottom: 1rem;
