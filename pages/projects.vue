@@ -11,14 +11,14 @@
                             <h2>Search</h2>
                             <div class="search">
                                 <fa icon="search" />
-                                <input type="text" v-model="search" placeholder="Enter keywords here.." />
+                                <input type="text" v-model="search" placeholder="Enter keywords here.." @input="updateVisibleProjects" />
                             </div>
                         </div>
                         <div class="filter">
                             <h2>Filters</h2>
                             <div>
                                 <p class="filter-title">Programs</p>
-                                <Checkbox :options="programList" :checkedOptions="checkedPrograms" v-model="checkedPrograms" @input="filterProjects" />
+                                <Checkbox :options="programList" :checkedOptions="checkedPrograms" v-model="checkedPrograms" @input="updateVisibleProjects" />
                             </div>
                             <div>
                                 <p class="filter-title">Discipline Area</p>
@@ -129,18 +129,26 @@ export default {
                         }
                     }
                 }
-                // var programMatched = false;
-                // console.log(project.projecttype);
-                // console.log(this.checkedPrograms);
-                // console.log("----");
                 // Show projects that match checked programs
-                // programMatched = this.checkedPrograms.match(project.projecttype);
-                // console.log(this.checkedPrograms.match(project.projecttype));
+                var programMatched = this.checkedPrograms.includes(project.projecttype);
                 // Show projects that match search keywords
-                // var searchMatched = false;
-                // searchMatched = (project.title.match(this.search) || project.title.toLowerCase().match(this.search.toLowerCase()));
-                // console.log(this.search);
-                return tagMatched;
+                var searchMatched = true;
+                if (this.search) {
+                    searchMatched = false;
+                    var principalInvestigatorMatched, coInvestigatorsMatched, organizationMatched, descriptionMatched = false;
+                    var lSearch = this.search.toLowerCase();
+                    if (project.principalinvestigator) {
+                        principalInvestigatorMatched = (project.principalinvestigator.match(this.search) || project.principalinvestigator.toLowerCase().match(lSearch));
+                    } if (project.coinvestigators) {
+                        coInvestigatorsMatched = (project.coinvestigators.match(this.search) || project.coinvestigators.toLowerCase().match(lSearch)); 
+                    } if (project.organization) {
+                        organizationMatched = (project.organization.match(this.search) || project.organization.toLowerCase().match(lSearch));
+                    } if (project.description) {
+                        descriptionMatched = (project.description.match(this.search) || project.description.toLowerCase().match(lSearch));
+                    }
+                    searchMatched = ((project.title.toLowerCase().match(lSearch)) || coInvestigatorsMatched || principalInvestigatorMatched || organizationMatched || descriptionMatched);
+                }
+                return tagMatched && programMatched && searchMatched;
             });
             this.filteredProjects = results;
         }
@@ -148,8 +156,8 @@ export default {
     // Show first page of projects upon page load
     async created() {
         try {
-            this.updateVisibleProjects();
             this.checkedPrograms = this.programList.flat();
+            this.updateVisibleProjects();
         } catch (err) {
             console.log(err);
         }
