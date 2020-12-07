@@ -62,6 +62,8 @@
                 </div>
             </section>
             <section id="resources">
+                <img class="rectangle background" src="~/assets/img/rectangle.png"/>
+                <img class="pattern-two background" src="~/assets/img/full-pattern.png"/>
                 <div>
                     <h1>Additional Resources</h1>
                     <Carousel 
@@ -380,11 +382,23 @@ export default {
         }
     }
     #resources {
-        margin: 6rem 0 6rem;
+        margin: 6rem 0 6rem 3rem;
         min-height: 36rem;
+        position: relative;
         h1 {
-            margin-left: 21rem;
+            margin-left: 18rem;
             margin-bottom: 1rem;
+        }
+        .pattern-two {
+            top: 31rem;
+            left: 9rem;
+            height: 32rem;
+        }
+        .rectangle {
+            left: -3rem;
+            top: -6rem;
+            width: 5rem;
+            height: 40rem;
         }
     }
 }

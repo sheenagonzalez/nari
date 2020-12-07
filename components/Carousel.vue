@@ -43,7 +43,7 @@ export default {
     @include row;
 }
 nav {
-    margin-right: 6rem;
+    margin-right: 3rem;
     margin-top: 2.5rem;
     button {
         font: $subheadline;
@@ -76,7 +76,7 @@ nav {
         position: absolute;
         background-color: $light-blue;
         opacity: .5;
-        left: 0;
+        left: -3rem;
         border-radius: $s-corner;
     }
 }
