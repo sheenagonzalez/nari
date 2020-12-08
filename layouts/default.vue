@@ -103,7 +103,6 @@ export default {
 </script>
 
 <style lang="scss">
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@300;400;600&display=swap');
 
 html {
 	font: $body;
@@ -111,6 +110,7 @@ html {
 	background-color: $grey;
 	line-height: 1.5;
 	letter-spacing: .01rem;
+    scroll-behavior: smooth;
 }
 /* Mobile */
 @media screen and (max-width: 420px) {
