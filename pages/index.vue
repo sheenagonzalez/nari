@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import ButtonCard from '~/components/ButtonCard.vue'
 export default {
     head() {
         return {
@@ -74,6 +75,9 @@ export default {
                 },
             ]
         }
+    },
+    components: {
+        ButtonCard,
     },
     data() {
         return {
@@ -145,7 +149,7 @@ export default {
         background-color: $med-blue;
         width: 100%;
         height: 100%;
-        opacity: 50%;
+        opacity: .5;
         position: absolute;
         z-index: 2;
     }
