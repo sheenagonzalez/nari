@@ -42,6 +42,7 @@ export default {
 <style scoped lang="scss">
 .menu-item {
     @include row;
+    z-index: 1000;
 }
 svg {
     font-size: .75rem;

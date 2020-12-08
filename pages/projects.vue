@@ -356,9 +356,6 @@ export default {
                     width: 12rem;
                     height: 2.5rem;
                     padding-left: 2rem;
-                    &::placeholder {
-                        color: $bluish-grey;
-                    }
                 }
             }
             .filter {

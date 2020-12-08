@@ -78,7 +78,6 @@
 export default {
     name: "AppFooter",
     props: ["resources", "partners", "events", "support"],
-    mixins: ["row", "input-field"]
 }
 </script>
 
