@@ -8,7 +8,7 @@
                 <h1>Meeting future <br><b>aviation needs.</b></h1>
                 <div class="mission">
                     <p><fa v-on:click="showMission = !showMission" icon="info-circle" />Our Mission</p>
-                    <p v-bind:class="[showMission ? 'description-show' : 'description-hide']" >NARI’s mission is to serve NASA internal and external customers by researching unexplored areas, collaborations, and value-added partnerships.</p>
+                    <p v-bind:class="[showMission ? 'description-show' : 'description-hide']" >NARI’s mission is to serve NASA's internal and external customers by researching unexplored areas, collaborations, and value-added partnerships.</p>
                 </div>
                 <div class="continue">
                     <nuxt-link to="#updates"><fa icon="chevron-down" />CONTINUE</nuxt-link>
