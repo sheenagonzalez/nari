@@ -11,8 +11,8 @@
                 <Dropdown title="Events" :items="events" />
             </ul>
             <div class="search">
-                <fa icon="search" />
-                <input type="text" placeholder="Search ..." />
+                <fa class="search-icon" icon="search" />
+                <input class="search-input" type="text" placeholder="Search ..." />
             </div>
         </div>
     </nav>
@@ -67,12 +67,12 @@ nav {
         }
         .search {
             @include field-wrapper;
-            svg {
+            &-icon {
                 @include field-icon;
                 height: 1rem;
                 width: 1rem;
             }
-            input[type=text] {
+            &-input {
                 @include field-input;
                 width: 10rem;
                 height: 2rem;

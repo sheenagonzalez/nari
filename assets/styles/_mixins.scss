@@ -8,10 +8,6 @@
 }
 
 @mixin field-wrapper {
-    display: inline-block;
-    background-color: white;
-    color: $med-blue;
-    border-radius: $s-corner;
     ::placeholder {
         font: $caption;
         color: $bluish-grey;
@@ -21,8 +17,11 @@
     position: absolute;
     margin-top: .5rem;
     margin-left: .5rem;
+    color: $med-blue;
 }
 @mixin field-input {
-    background: none;
+    background-color: white;
+    color: $med-blue;
     border-radius: $s-corner;
+    padding: .25rem;
 }

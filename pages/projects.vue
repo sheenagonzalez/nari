@@ -10,8 +10,8 @@
                         <div class="browse">
                             <h2>Search</h2>
                             <div class="search">
-                                <fa icon="search" />
-                                <input type="text" v-model="search" placeholder="Enter keywords here.." @input="updateVisibleProjects" />
+                                <fa class="search-icon" icon="search" />
+                                <input class="search-input" type="text" v-model="search" placeholder="Enter keywords here.." @input="updateVisibleProjects" />
                             </div>
                         </div>
                         <div class="filter">
@@ -348,12 +348,12 @@ export default {
             }
             .search {
                 @include field-wrapper;
-                svg {
+                &-icon {
                     @include field-icon;
                     height: 1.5rem;
                     width: 1rem;
                 }
-                input[type=text] {
+                &-input {
                     @include field-input;
                     width: 12rem;
                     height: 2.5rem;

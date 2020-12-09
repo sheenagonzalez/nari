@@ -125,23 +125,15 @@ footer {
         form {
             @include row;
             .field {
+                @include field-wrapper;
                 margin-top: .5rem;
-                ::placeholder {
-                    font: $caption;
-                    color: $bluish-grey;
-                }
                 &-icon {
-                    position: absolute;
-                    margin-top: .5rem;
-                    margin-left: .5rem;
+                    @include field-icon;
                     height: 1.5rem;
                     width: 1.5rem;
-                    color: $med-blue;
                 }
                 &-input {
-                    background-color: white;
-                    color: $med-blue;
-                    border-radius: $s-corner;
+                    @include field-input;
                     width: 21rem;
                     height: 2.5rem;
                     padding-left: 2.5rem;
