@@ -125,25 +125,15 @@ footer {
         form {
             @include row;
             .field {
-                display: inline-block;
+                @include field-wrapper;
                 margin-top: .5rem;
-                background-color: white;
-                color: $med-blue;
-                border-radius: $s-corner;
-                ::placeholder {
-                    font: $caption;
-                    color: $bluish-grey;
-                }
                 svg {
-                    position: absolute;
-                    margin-top: .5rem;
-                    margin-left: .5rem;
+                    @include field-icon;
                     height: 1.5rem;
                     width: 1.5rem;
                 }
                 input[type=text] {
-                    background: none;
-                    border-radius: $s-corner;
+                    @include field-input;
                     width: 21rem;
                     height: 2.5rem;
                     padding-left: 2.5rem;

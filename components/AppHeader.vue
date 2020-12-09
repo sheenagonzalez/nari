@@ -66,24 +66,14 @@ nav {
             }
         }
         .search {
-            display: inline-block;
-            background-color: white;
-            color: $med-blue;
-            border-radius: $s-corner;
-            ::placeholder {
-                font: $caption;
-                color: $bluish-grey;
-            }
+            @include field-wrapper;
             svg {
-                position: absolute;
-                margin-top: .5rem;
-                margin-left: .5rem;
+                @include field-icon;
                 height: 1rem;
                 width: 1rem;
             }
             input[type=text] {
-                background: none;
-                border-radius: $s-corner;
+                @include field-input;
                 width: 10rem;
                 height: 2rem;
                 padding-left: 2rem;

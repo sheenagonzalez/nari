@@ -347,12 +347,14 @@ export default {
                 margin: 0 -5.25rem;
             }
             .search {
-                @include input-field;
+                @include field-wrapper;
                 svg {
+                    @include field-icon;
                     height: 1.5rem;
                     width: 1rem;
                 }
                 input[type=text] {
+                    @include field-input;
                     width: 12rem;
                     height: 2.5rem;
                     padding-left: 2rem;

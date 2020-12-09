@@ -7,7 +7,7 @@
     flex-direction: row;
 }
 
-@mixin input-field {
+@mixin field-wrapper {
     display: inline-block;
     background-color: white;
     color: $med-blue;
@@ -16,13 +16,13 @@
         font: $caption;
         color: $bluish-grey;
     }
-    svg {
-        position: absolute;
-        margin-top: .5rem;
-        margin-left: .5rem;
-    }
-    input[type=text] {
-        background: none;
-        border-radius: $s-corner;
-    }
+}
+@mixin field-icon {
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+@mixin field-input {
+    background: none;
+    border-radius: $s-corner;
 }
