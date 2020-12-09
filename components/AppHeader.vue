@@ -75,6 +75,7 @@ nav {
                 width: 10rem;
                 height: 2rem;
                 padding-left: 2rem;
+                text-decoration: underline;
             }
         }
     }
