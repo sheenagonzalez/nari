@@ -19,8 +19,8 @@ export default {
   ],
   styleResources: {
     scss: [
-        '~/assets/styles/_mixins.scss',
-        '~/assets/styles/_variables.scss'
+        '~/assets/styles/_variables.scss',
+        '~/assets/styles/_mixins.scss'
       ]
   },
 
