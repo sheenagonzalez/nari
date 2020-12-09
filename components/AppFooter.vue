@@ -125,21 +125,34 @@ footer {
         form {
             @include row;
             .field {
-                @include field-wrapper;
+                display: inline-block;
+                ::placeholder {
+                    font: $caption;
+                    color: $bluish-grey;
+                }
+                // @include field-wrapper;
                 margin-top: .5rem;
                 svg {
-                    @include field-icon;
+                    color: $med-blue;
+                    position: absolute;
+                    margin-top: .5rem;
+                    margin-left: .5rem;
+                    // @include field-icon;
                     height: 1.5rem;
                     width: 1.5rem;
                 }
                 input[type=text] {
-                    @include field-input;
+                    background-color: white;
+                    color: $med-blue;
+                    border-radius: $s-corner;
+                    // @include field-input;
                     width: 21rem;
                     height: 2.5rem;
                     padding-left: 2.5rem;
                 }
             }
             input[value="Subscribe"] {
+                cursor: pointer;
                 margin-top: .5rem;
                 margin-left: 1rem;
                 padding: .58rem 1.5rem .42rem;
