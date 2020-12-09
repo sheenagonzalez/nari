@@ -66,16 +66,27 @@ nav {
             }
         }
         .search {
-            @include input-field;
+            display: inline-block;
+            background-color: white;
+            color: $med-blue;
+            border-radius: $s-corner;
+            ::placeholder {
+                font: $caption;
+                color: $bluish-grey;
+            }
             svg {
+                position: absolute;
+                margin-top: .5rem;
+                margin-left: .5rem;
                 height: 1rem;
                 width: 1rem;
             }
             input[type=text] {
+                background: none;
+                border-radius: $s-corner;
                 width: 10rem;
                 height: 2rem;
                 padding-left: 2rem;
-                text-decoration: underline;
             }
         }
     }
