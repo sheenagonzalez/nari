@@ -48,8 +48,8 @@
                 <p>We send the latest news, opportunities and resources directly to your inbox when you sign up to our newsletter.</p>
                 <form>
                     <div class="field">
-                        <fa icon="envelope" />
-                        <input type="text" placeholder="Enter your e-mail address" name="mail" required />
+                        <fa class="field-icon" icon="envelope" />
+                        <input class="field-input" type="text" placeholder="Enter your e-mail address" name="mail" required />
                     </div>
                     <input type="submit" value="Subscribe" />
                 </form>
@@ -125,34 +125,29 @@ footer {
         form {
             @include row;
             .field {
-                display: inline-block;
+                margin-top: .5rem;
                 ::placeholder {
                     font: $caption;
                     color: $bluish-grey;
                 }
-                // @include field-wrapper;
-                margin-top: .5rem;
-                svg {
-                    color: $med-blue;
+                &-icon {
                     position: absolute;
                     margin-top: .5rem;
                     margin-left: .5rem;
-                    // @include field-icon;
                     height: 1.5rem;
                     width: 1.5rem;
+                    color: $med-blue;
                 }
-                input[type=text] {
+                &-input {
                     background-color: white;
                     color: $med-blue;
                     border-radius: $s-corner;
-                    // @include field-input;
                     width: 21rem;
                     height: 2.5rem;
                     padding-left: 2.5rem;
                 }
             }
             input[value="Subscribe"] {
-                cursor: pointer;
                 margin-top: .5rem;
                 margin-left: 1rem;
                 padding: .58rem 1.5rem .42rem;
