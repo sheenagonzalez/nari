@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<AppHeader :projects="projects" :partners="partners" :events="events"/>
+		<AppHeader :events="eventsNavItems" :aam="aamNavItems"/>
 		<Nuxt />
-		<AppFooter :resources="resources" :partners="partners" :events="events" :support="support"/>
+		<AppFooter :resources="resources" :programs="programs" :events="events" :support="support"/>
 	</div>
 </template>
 
@@ -27,33 +27,47 @@ export default {
 	},
 	data() {
         return {
-            projects: [
+            eventsNavItems: [
                 {
-                    sublink: 'The LEARN Project',
+                    sublink: 'Calendar',
                     path: '/'
                 },
                 {
-                    sublink: 'Seedling Fund',
+                    sublink: 'Highlights',
                     path: '/'
                 },
                 {
-                    sublink: 'Archived Projects',
-                    path: '/projects'
+                    sublink: 'Files',
+                    path: '/'
+                },
+                {
+                    sublink: 'Recordings',
+                    path: '/'
                 },
             ],
-            partners: [
+            aamNavItems: [
                 {
-                    sublink: 'Investigators',
+                    sublink: 'Ecosystem Working Groups',
                     path: '/'
                 },
                 {
-                    sublink: 'Collaborators',
+                    sublink: 'Supply Chain Working Groups',
+                    path: '/'
+                },
+            ],
+            programs: [
+                {
+                    sublink: 'Initiatives',
                     path: '/'
                 },
                 {
-                    sublink: 'IATA',
+                    sublink: 'Research',
                     path: '/'
                 },
+                {
+                    sublink: 'News',
+                    path: '/'
+                }
             ],
             events: [
                 {
@@ -71,7 +85,7 @@ export default {
 			],
 			resources: [
                 {
-                    sublink: 'Educators',
+                    sublink: 'Community',
                     path: '/'
                 },
                 {

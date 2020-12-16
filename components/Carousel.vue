@@ -1,21 +1,23 @@
 <template>
     <div class="carousel">
         <nav>
-            <div v-for="(name, i) in items" :key="i">
+            <div v-for="(slide, i) in slides" :key="i">
                 <div v-show="visibleSlide == i" class="box"></div>
-                <button v-bind:class="[visibleSlide == i ? 'current' : '']" v-on:click="updateVisibleSlide(i)">{{ name }}</button>
+                <button v-bind:class="[visibleSlide == i ? 'current' : '']" v-on:click="updateVisibleSlide(i)">{{ slide.for }}</button>
             </div>
         </nav>
-        <CarouselSlide v-for="(slide, i) in slides" :key="i"
-            :index="i"
-            :title="slide.title"
-            :description="slide.description"
-            :link="slide.link"
-            :fileName="slide.fileName"
-            :caption="slide.caption"
-            :credits="slide.credits"
-            :visibleSlide="visibleSlide"
-        />
+        <div class="slides">
+            <CarouselSlide v-for="(slide, i) in slides" :key="i"
+                :index="i"
+                :title="slide.title"
+                :description="slide.description"
+                :link="slide.link"
+                :fileName="slide.fileName"
+                :caption="slide.caption"
+                :credits="slide.credits"
+                :visibleSlide="visibleSlide"
+            />
+        </div>
     </div>
 </template>
 
@@ -27,7 +29,7 @@ export default {
     components: [
         CarouselSlide
     ],
-    props: ["items", "visibleSlide", "slides"],
+    props: ["visibleSlide", "slides"],
     methods: {
         updateVisibleSlide(index) {
            this.visibleSlide = index;
@@ -43,30 +45,32 @@ export default {
     @include row;
 }
 nav {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
     margin-top: 2.5rem;
     button {
         font: $subheadline;
         margin: 1rem 0 1rem 5rem;
         padding: .5rem 0;
-        width: 10rem;
+        width: 11.5rem;
         text-align: left;
         position: relative;
         z-index: 1;
         outline: none;
         &:hover {
-            height: 2.7rem;
             border-bottom: .0625rem solid $bluish-grey;
             border-radius: $s-corner;
             box-sizing: border-box;
+            margin-bottom: .925rem;
         }
     }
     .current {
         z-index: 3;
-        font: $subheadline-bold;
+        font: $subheadline;
+        font-weight: bold;
         &:hover {
             border: none;
             cursor: default;
+            margin-bottom: 1rem;
         }
     }
     .box {

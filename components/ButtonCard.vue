@@ -64,7 +64,7 @@ export default {
             }
         }
     }
-    :hover {
+    &:hover {
         background-color: $med-blue;
         transition: .2s;
         .text {

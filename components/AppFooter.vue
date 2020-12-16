@@ -12,10 +12,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="partners">
-                    <h1>Partners</h1>
+                <div class="programs">
+                    <h1>Programs</h1>
                     <ul class="menu">
-                        <li class="menu-item" v-for="(item, i) in partners" :key="i">
+                        <li class="menu-item" v-for="(item, i) in programs" :key="i">
                             <nuxt-link :to=item.path>
                                 {{ item.sublink }}
                             </nuxt-link>
@@ -77,7 +77,7 @@
 <script>
 export default {
     name: "AppFooter",
-    props: ["resources", "partners", "events", "support"],
+    props: ["resources", "programs", "events", "support"],
 }
 </script>
 
@@ -97,7 +97,8 @@ footer {
     position: absolute;
     left: 3rem;
     h1 {
-        font: $subheadline-bold;
+        font: $subheadline;
+        font-weight: bold;
     }
     nav {
         display: grid;
@@ -146,6 +147,7 @@ footer {
                 border-radius: $s-corner;
                 color: $med-blue;
                 background-color: $bluish-grey;
+                cursor: pointer;
                 &:hover {
                     background-color: $light-blue;
                 }
@@ -180,7 +182,8 @@ footer {
         margin-top: 1.5rem;
         .bold {
             margin-bottom: .4rem;
-            font: $body-bold;
+            font: $body;
+            font-weight: bold;
         }
     }
     .copyright {

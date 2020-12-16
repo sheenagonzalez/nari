@@ -25,3 +25,15 @@
     border-radius: $s-corner;
     padding: .25rem;
 }
+@mixin button {
+    padding: 1rem 1.75rem;
+    color: $dark-blue;
+    border: .0625rem solid $bluish-grey;
+    border-radius: $s-corner;
+    &:hover {
+        border-color: $med-blue;
+        background-color: $med-blue;
+        color: white;
+        transition: .2s;
+    }
+}

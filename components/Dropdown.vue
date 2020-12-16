@@ -53,8 +53,8 @@ svg {
     background-color: $grey;
     color: $med-blue;
     top: 4rem;
-    transform: translate(-1rem, -.75rem);
-    width: 16rem;
+    transform: translate(-1rem, .5rem);
+    max-width: 16rem;
     border-radius: 0 0 $m-corner $m-corner;
     box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.2);
 

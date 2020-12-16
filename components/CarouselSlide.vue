@@ -5,7 +5,7 @@
                 <div class="left">
                     <h1>{{ title }}</h1>
                     <p>{{ description }}</p>
-                    <a target="_blank" :href="link" class="button">Learn more ></a>
+                    <a target="_blank" :href="link" class="button">Learn more</a>
                 </div>
                 <div class="right">
                     <img :src="imgLink" :alt="fileName"/>
@@ -77,16 +77,7 @@ export default {
             margin-bottom: 3rem;
         }
         .button {
-            padding: .75rem 1.75rem;
-            color: $dark-blue;
-            border: .0625rem solid $bluish-grey;
-            border-radius: $s-corner;
-            &:hover {
-                border-color: $med-blue;
-                background-color: $med-blue;
-                color: white;
-                transition: .5s;
-            }
+            @include button;
         }
     }
     .right {

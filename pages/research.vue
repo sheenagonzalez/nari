@@ -1,12 +1,12 @@
 <template>
     <div>
-        <img class="polygon background" src="~/assets/img/polygon.png"/>
+        <img class="polygon background" src="~/assets/img/polygon.svg"/>
         <div class="main">
             <section id="projects">
                 <!-- Advanced Search (Side bar) -->
                 <div class="side-wrapper">
                     <nav class="sticky-nav">
-                        <img class="pattern background" src="~/assets/img/pattern.png"/>
+                        <img class="pattern background" src="~/assets/img/city-grid-pattern.svg"/>
                         <div class="browse">
                             <h2>Search</h2>
                             <div class="search">
@@ -40,7 +40,7 @@
                 </div>
                 <!-- List of Collapsible Projects -->
                 <div class="list">
-                    <h1>Projects</h1>
+                    <h1>Past <b>Research</b></h1>
                     <Project v-for="(data, i) in visibleProjects" :key="i"
                         :projectType="data.projecttype"
                         :phase="data.phase"
@@ -54,20 +54,19 @@
                         :tags="data.tags"
                     />
                     <Pagination v-on:page:update="updatePage"
-                        v-bind:items="projectsData"
-                        v-bind:currentPage="currentPage"
-                        v-bind:pageSize="pageSize"
-                        v-bind:limit="5"
+                        :items="projectsData"
+                        :currentPage="currentPage"
+                        :pageSize="pageSize"
+                        :limit="5"
                     />
                 </div>
             </section>
-            <section id="resources">
-                <img class="rectangle background" src="~/assets/img/rectangle.png"/>
-                <img class="pattern-two background" src="~/assets/img/full-pattern.png"/>
+            <section id="research-programs">
+                <img class="rectangle background" />
+                <img class="pattern-two background" src="~/assets/img/city-grid-pattern.svg"/>
                 <div>
-                    <h1>Additional Resources</h1>
-                    <Carousel 
-                        :items="['For Educators', 'For Students', 'For Researchers']"
+                    <h1>Research <b>Programs</b></h1>
+                    <Carousel
                         :visibleSlide="visibleSlide"
                         :slides="slides"
                     />
@@ -226,36 +225,27 @@ export default {
                 "Ultra-Efficient Commercial Vehicles",
                 "Other"
             ],
-            slides: {
-                0: {
-                    for: "educators",
-                    title: "Lorem ipsum dolor est",
+            slides: [
+                {
+                    for: "The LEARN Project",
+                    title: "The LEARN Project",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     link: "",
                     fileName: "plane-2.png",
                     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     credits: ""
                 },
-                1: {
-                    for: "students",
-                    title: "University Leadership Initiative (ULI)",
-                    description: "This initiative allows universities and university-led partnerships to provide strategic leadership that advances ARMD’s research objectives and promotes education of the next generation of engineers.",
-                    link: "https://nari.arc.nasa.gov/uli",
-                    fileName: "uli.png",
-                    caption: "ULI students from Carnegie Mellon University stand in front of a sophisticated 3D printer they will use to explore new methods for manufacturing aircraft components.",
-                    credits: "Anthony Rollett, CMU"
-                },
-                2: {
-                    for: "researchers",
-                    title: "Lorem ipsum dolor est",
+                {
+                    for: "Seedling Fund",
+                    title: "Seedling Fund",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     link: "",
                     fileName: "plane-2.png",
                     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     credits: ""
-                }
-            },
-            visibleSlide: 1,
+                },
+            ],
+            visibleSlide: 0,
         }
     }
 }
@@ -269,6 +259,7 @@ export default {
 .multiselect {
     max-width: 12rem;
     font: $caption;
+    cursor: pointer;
     &__option {
         &--highlight, &--highlight:after {
             background: $grey;
@@ -321,14 +312,16 @@ export default {
 }
 .main {
     h1 {
-    font: $headline-bold;
+    font: $headline;
     }
     h2 {
-        font: $subheadline-bold;
+        font: $subheadline;
+        font-weight: bold;
         margin-bottom: 1rem;
     }
-    h3, .project-title {
+    h3 {
         font: $subheadline;
+        font-weight: bold;
     }
     #projects {
         margin: 3rem 5rem;
@@ -344,7 +337,7 @@ export default {
             grid-gap: 3rem;
             .pattern {
                 height: 33rem;
-                margin: 0 -5.25rem;
+                margin: 0 -15rem;
             }
             .search {
                 @include field-wrapper;
@@ -380,7 +373,7 @@ export default {
             @include row;
         }
     }
-    #resources {
+    #research-programs {
         margin: 6rem 0 6rem 3rem;
         min-height: 36rem;
         position: relative;
@@ -394,6 +387,7 @@ export default {
             height: 32rem;
         }
         .rectangle {
+            background-color: $dark-blue;
             left: -3rem;
             top: -6rem;
             width: 5rem;
