@@ -14,7 +14,7 @@
                     <p v-bind:class="[showMission ? 'description-show' : 'description-hide']" >NARI’s mission is to serve NASA's internal and external customers by researching unexplored areas, collaborations, and value-added partnerships.</p>
                 </div> -->
                 <div class="continue">
-                    <nuxt-link to="#updates"><fa icon="chevron-down" />CONTINUE</nuxt-link>
+                    <nuxt-link to="#updates"><fa icon="chevron-down" /></nuxt-link>
                 </div>
             </div>
         </section>
@@ -22,41 +22,43 @@
             <img src="~/assets/img/city-grid-pattern.svg"/>
         </div>
         <section id="updates">
-            <div>
-                <h2>Latest News</h2>
-                <h1>What's <b>Up in the Air?</b></h1>
-                <ButtonCard class="button-card" v-for="(article, i) in articles" :key="i"
-                    :title="article.title"
-                    :date="article.date"
-                    :snippet="article.snippet"
-                    :link="'https://www.iata.org' + article.link"
-                    type="article"
-                    :typeInfo="article.readTime"
-                />
-                <div class="more"><nuxt-link to="">Read More ></nuxt-link></div>
-            </div>
             <div class="logo-pattern logo-pattern-one background">
                 <img src="~/assets/img/logo-pattern.svg"/>
             </div>
-            <div>
-                <h2>Upcoming Events</h2>
-                <h1>Steering <b>Forward</b></h1>
-                <div class="wrapper-fill" v-if="events.length > 0">
-                    <ButtonCard class="button-card" v-for="(event, i) in events" :key="i"
-                        :title="event.title"
-                        :date="event.date"
-                        :snippet="event.snippet"
-                        :link="event.link"
-                        type="event"
-                        :typeInfo="event.type"
+            <div class="wrapper">
+                <div>
+                    <h2>Latest News</h2>
+                    <h1>What's <b>Up in the Air?</b></h1>
+                    <ButtonCard class="button-card" v-for="(article, i) in articles" :key="i"
+                        :title="article.title"
+                        :date="article.date"
+                        :snippet="article.snippet"
+                        :link="'https://www.iata.org' + article.link"
+                        type="article"
+                        :typeInfo="article.readTime"
                     />
+                    <div class="more"><nuxt-link to="">Read More ></nuxt-link></div>
                 </div>
-                <div class="wrapper-empty" v-if="events.length == 0">
-                    <p>There are no upcoming events.</p>
+                <div>
+                    <h2>Upcoming Events</h2>
+                    <h1>Steering <b>Forward</b></h1>
+                    <div class="wrapper-fill" v-if="events.length > 0">
+                        <ButtonCard class="button-card" v-for="(event, i) in events" :key="i"
+                            :title="event.title"
+                            :date="event.date"
+                            :snippet="event.snippet"
+                            :link="event.link"
+                            type="event"
+                            :typeInfo="event.type"
+                        />
+                    </div>
+                    <div class="wrapper-empty" v-if="events.length == 0">
+                        <p>There are no upcoming events.</p>
+                    </div>
+                    <!-- TO DO: Put link when events page is done -->
+                    <!-- <nuxt-link to="~/pages/events">Go to Events ></nuxt-link> -->
+                    <div class="more"><nuxt-link to="">View Calendar ></nuxt-link></div>
                 </div>
-                <!-- TO DO: Put link when events page is done -->
-                <!-- <nuxt-link to="~/pages/events">Go to Events ></nuxt-link> -->
-                <div class="more"><nuxt-link to="">View Calendar ></nuxt-link></div>
             </div>
         </section>
         <div class="pattern pattern-two background">
@@ -73,10 +75,10 @@
                 <img class="graphic-reflection" src="~/assets/img/boeingBlendedWingBody-plane-illustration.svg" />
             </div>
         </section>
-        <div class="logo-pattern logo-pattern-two background">
-            <img src="~/assets/img/logo-pattern.svg"/>
-        </div>
         <section id="footprint">
+            <div class="logo-pattern logo-pattern-two background">
+                <img src="~/assets/img/logo-pattern.svg"/>
+            </div>
             <h2>Our Footprint</h2>
             <h1>Landing <b>Impact</b></h1>
             <div class="wrapper">
@@ -241,18 +243,26 @@ export default {
     }
 }
 .logo-pattern {
-    width: 89.5%;
+    position: absolute;
+    img {
+        width: 100%;
+        height: 100%;
+    }
     &-one {
-        top: 5.5rem;
+        width: 90.5%;
+        bottom: -5rem;
         right: 0rem;
     }
     &-two {
-        top: 100rem;
+        width: 105%;
+        bottom: -8rem;
+        left: -9.75rem;
         transform: scaleX(-1);
-        left: -.125rem;
-        width: 89.5%;
-        object-fit: cover;
-        object-position: 2rem -1rem;
+        height: 150%;
+        img {
+            object-fit: cover;
+            object-position: 0 100%;
+        }
     }
 }
 h2 {
@@ -262,8 +272,8 @@ h1 {
     font: $headline;
 }
 #welcome {
-    width: 100%;
-    height: 42rem;
+    max-width: 100%;
+    max-height: 42rem;
     overflow: hidden;
     position: relative;
     video {
@@ -323,10 +333,19 @@ h1 {
         // }
         .continue {
             position: absolute;
-            top: 92%;
-            left: 6.75rem;
+            bottom: 2%;
+            left: 9.5rem;
             color: white;
             z-index: 3;
+            animation: moveUpDown 1s linear infinite;
+            @keyframes moveUpDown {
+                0%, 100% {
+                    bottom: 2%;
+                }
+                70% {
+                    bottom: 1%;
+                }
+            }
             svg {
                 font-size: 1.25rem;
                 margin-left: .4rem;
@@ -336,29 +355,31 @@ h1 {
     }
 }
 #updates {
-    margin: 7rem 9.75rem 11rem;
-    display: grid;
-    grid-template-columns: 27.5rem 27.5rem;
-    grid-gap: 3.25rem;
-    h1 {
-        margin-top: .25rem;
-        margin-bottom: 2rem;
-    }
-    .button-card {
-        margin: 1rem 0;
-    }
-    .more {
-        color: $med-blue;
-        text-align: right;
-    }
-    .wrapper-empty p {
-        color: $bluish-grey;
-        margin-bottom: 3rem;
+    position: relative;
+    .wrapper {
+        margin: 7rem 11rem 11rem 9.75rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3.25rem;
+        h1 {
+            margin-bottom: 1.25rem;
+        }
+        .button-card {
+            margin: 1rem 0;
+        }
+        .more {
+            color: $med-blue;
+            text-align: right;
+        }
+        &-empty p {
+            color: $bluish-grey;
+            margin-bottom: 3rem;
+        }
     }
 }
 #projects {
     @include row;
-    height: 41rem;
+    min-height: 41rem;
     background-color: $med-blue;
     color: white;
     margin: 5rem 0;
@@ -387,14 +408,17 @@ h1 {
         position: absolute;
         right: 3.5rem;
         width: 62%;
+        
         &-reflection {
             transform: scaleY(-1);
             opacity: .2;
+            overflow: hidden;
         }
     }
 }
 #footprint {
     margin: 7rem 3.5rem 8rem 9.75rem;
+    position: relative;
     .wrapper {
         margin-top: 1rem;
         display: grid;

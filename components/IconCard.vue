@@ -19,7 +19,7 @@ export default {
     width: 100%;
     background-color: white;
     border-radius: $m-corner;
-    padding: 1.75rem 2rem;
+    padding: 2rem 1.5rem 1.5rem 1.75rem;
     svg {
         width: 100%;
         font-size: 5rem;
