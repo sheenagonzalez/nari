@@ -95,15 +95,22 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="faqs">
-            <h1>Frequently Asked <b>Questions</b></h1>
-            <p>Here are the most frequently asked questions about NARI.</p>
-            <div class="item" v-for="(q, i) in questions" :key="i">
-                <h2>{{ q.question }}</h2>
-                <p>{{ q.answer }}</p>
+        <section id="faqs">
+            <div class="title">
+                <h1>Frequently Asked <b>Questions</b></h1>
+                <p>Here are the most frequently asked questions about NARI.</p>
+            </div>
+            <div class="content">
+                <div class="card" v-for="(q, i) in questions" :key="i">
+                    <h2>{{ q.question }}</h2>
+                    <p>{{ q.answer }}</p>
+                </div>
+            </div>
+            <div class="pattern background">
+                <img src="~/assets/img/city-grid-pattern.svg"/>
             </div>
         </section>
-        <section id="contact">
+        <!-- <section id="contact">
             <h1>Get <b>in touch</b>.</h1>
             <div class="wrapper">
                 <div class="social">
@@ -189,15 +196,9 @@ h2 {
     font: $subheadline;
 }
 .background {
-    top: -8rem;
     position: absolute;
     z-index: -1;
-    width: 80%;
     img {
-        width: 100%;
-        height: 100%;
-        left: -9.75rem;
-        transform: scaleX(-1);
         object-fit: cover;
         object-position: 0 100%;
     }
@@ -334,6 +335,16 @@ h2 {
     h2 {
         color: $med-blue;
     }
+    .logo-pattern {
+        top: -20rem;
+        width: 87.5%;
+        img {
+            width: 100%;
+            height: 100%;
+            left: -9.75rem;
+            transform: scaleX(-1);
+        }
+    }
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -392,6 +403,37 @@ h2 {
                     top: 25%;
                     color: $grey;
                 }
+            }
+        }
+    }
+}
+#faqs {
+    position: relative;
+    .pattern {
+        right: 0;
+        top: 14rem;
+        img {
+            object-position: 13.5rem 100%;
+        }
+    }
+    .title {
+        margin: 3.5rem 9.75rem 2rem 9.75rem;
+        p {
+            margin-top: .5rem;
+        }
+    }
+    .content {
+        margin: 1rem 9.75rem 3.5rem 9.75rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        .card {
+            background-color: white;
+            border-radius: $m-corner;
+            padding: 2rem 1.5rem;
+            h2 {
+                color: $med-blue;
+                margin-bottom: 1rem;
             }
         }
     }
