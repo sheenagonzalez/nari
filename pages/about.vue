@@ -46,48 +46,56 @@
                 </div>
             </div>
         </section>
-        <!-- <div class="logo-pattern background">
-            <img src="~/assets/img/logo-pattern.svg"/>
-        </div>
         <section id="team">
-            <div class="card-main">
-                <img src="~/assets/img/team_pk.jpg" />
-                <div class="right">
-                    <h2>Parimal Kopardekar, Ph.D.</h2>
-                    <p><b>Acting Director</b></p>
-                    <p>As NARI’s Acting Director, Parimal Kopardekar (PK) is responsible for exploring new trends and needs related to aviation in the areas of autonomy, aeronautics manufacturing, and advanced air mobility. PK enjoys initiating new concepts and technology ideas that increase airspace capacity and throughput, reduce delays, and reduce the total cost of air transportation. </p>
-                    <br>
-                    <p>At NASA, he has initiated many innovative research projects including reduced crew operations, net-enabled air traffic management, and autonomy for airspace operations. He was named among the 25 most influential people in commercial drone industry in 2017, and he won the 2018 Samuel J. Heyman Service to America Medals in the "Promising Innovations" category in 2018. With more than 15 keynote talks at national and international conferences, over 50 conference and journal papers, and three best paper awards, PK participates as a media expert on topics related to unmanned aircraft systems, urban air mobility, and autonomy.</p>
+            <div class="logo-pattern background">
+                <img src="~/assets/img/logo-pattern.svg"/>
+            </div>
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Meet the <b>Team</b></h1>
                 </div>
-            </div>
-            <div class="card-sub">
-                <img src="~/assets/img/team_ricky.jpg" />
-                <h2>Ricky Guest</h2>
-                <p><b>Collaborative Technologies Specialist</b></p>
-            </div>
-            <div class="card-sub">
-                <img src="~/assets/img/team_cecelia.jpg" />
-                <h2>Cecelia Town</h2>
-                <p><b>Program Analyst / Resource Manager</b></p>
-            </div>
-            <div class="card-sub">
-                <div class="img-placeholder">
-                    <div class="container"></div>
-                    <fa icon="user" />
+                <div class="card main">
+                    <img src="~/assets/img/team_pk.jpg" />
+                    <div class="right">
+                        <h2>Parimal Kopardekar, Ph.D.</h2>
+                        <p><b>Acting Director</b></p>
+                        <p class="body">As NARI’s Acting Director, Parimal Kopardekar (PK) is responsible for exploring new trends and needs related to aviation in the areas of autonomy, aeronautics manufacturing, and advanced air mobility. PK enjoys initiating new concepts and technology ideas that increase airspace capacity and throughput, reduce delays, and reduce the total cost of air transportation. </p>
+                        <p class="body">At NASA, he has initiated many innovative research projects including reduced crew operations, net-enabled air traffic management, and autonomy for airspace operations. He was named among the 25 most influential people in commercial drone industry in 2017, and he won the 2018 Samuel J. Heyman Service to America Medals in the "Promising Innovations" category in 2018. With more than 15 keynote talks at national and international conferences, over 50 conference and journal papers, and three best paper awards, PK participates as a media expert on topics related to unmanned aircraft systems, urban air mobility, and autonomy.</p>
+                    </div>
                 </div>
-                <h2>Michael A. Tsairides</h2>
-                <p><b>Special Projects Manager / Task Lead & Website Editor</b></p>
-            </div>
-            <div class="card-sub">
-                <div class="img-placeholder">
-                    <div class="container"></div>
-                    <fa icon="user" />
+                <div class="card sub">
+                    <div class="img-container">
+                        <img class="img" src="~/assets/img/team_ricky.jpg" />
+                    </div>
+                    <h2>Ricky Guest</h2>
+                    <p><b>Collaborative Technologies Specialist</b></p>
                 </div>
-                <h2>Alina Eskridge</h2>
-                <p><b>Project Coordinator</b></p>
+                <div class="card sub">
+                    <div class="img-container">
+                        <img class="img" src="~/assets/img/team_cecelia.jpg" />
+                    </div>
+                    <h2>Cecelia Town</h2>
+                    <p><b>Program Analyst / Resource Manager</b></p>
+                </div>
+                <div class="card sub">
+                    <div class="img-container">
+                        <div class="img"></div>
+                        <fa icon="user" />
+                    </div>
+                    <h2>Michael A. Tsairides</h2>
+                    <p><b>Special Projects Manager / Task Lead & Website Editor</b></p>
+                </div>
+                <div class="card sub">
+                    <div class="img-container">
+                        <div class="img"></div>
+                        <fa icon="user" />
+                    </div>
+                    <h2>Alina Eskridge</h2>
+                    <p><b>Project Coordinator</b></p>
+                </div>
             </div>
         </section>
-        <section id="faqs">
+        <!-- <section id="faqs">
             <h1>Frequently Asked <b>Questions</b></h1>
             <p>Here are the most frequently asked questions about NARI.</p>
             <div class="item" v-for="(q, i) in questions" :key="i">
@@ -181,15 +189,15 @@ h2 {
     font: $subheadline;
 }
 .background {
+    top: -8rem;
     position: absolute;
     z-index: -1;
+    width: 80%;
     img {
         width: 100%;
         height: 100%;
-        bottom: -8rem;
         left: -9.75rem;
         transform: scaleX(-1);
-        height: 150%;
         object-fit: cover;
         object-position: 0 100%;
     }
@@ -255,7 +263,6 @@ h2 {
                 position: relative;
                 visibility: visible;
                 opacity: 1;
-                display: grid;
                 height: 26.5rem;
                 width: 100%;
                 overflow: hidden;
@@ -290,11 +297,12 @@ h2 {
                 position: absolute;
                 top: 0;
                 background-color: white;
+                border-radius: $m-corner;
                 padding: 2.5rem 3.5rem 2rem 3.5rem;
-                width: 100%;
+                max-width: 100%;
                 height: 100%;
                 .info {
-                    max-width: 35rem;
+                    max-width: 100%;
                     max-height: 100%;
                     margin-bottom: 1rem;
                     p {
@@ -312,6 +320,77 @@ h2 {
                     visibility: visible;
                     opacity: 1;
                     transition: visibility 0s, opacity .5s linear;
+                }
+            }
+        }
+    }
+}
+#team {
+    position: relative;
+    top: -4rem;
+    img {
+        filter: grayscale(40%);
+    }
+    h2 {
+        color: $med-blue;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: .175fr 1.25fr 1fr;
+        grid-gap: 2rem;
+        margin: 0 9.75rem;
+        .card {
+            background-color: white;
+            padding: 1.25rem;
+            border-radius: $s-corner;
+        }
+        .title {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            h1 {
+                text-align: center;
+            }
+        }
+        .main {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            @include row;
+            padding: 2rem 3rem 2rem 1.25rem;
+            img {
+                width: 13.5rem;
+                height: 13.5rem;
+                margin-right: 1.25rem;
+            }
+            .right {
+                width: 100%;
+                .body {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .sub {
+            .img-container {
+                width: 100%;
+                height: 14.5vw;
+                object-fit: cover;
+                position: relative;
+                margin-bottom: 1rem;
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    background-color: $bluish-grey;
+                }
+                svg {
+                    position: absolute;
+                    font-size: 5rem;
+                    width: 100%;
+                    top: 25%;
+                    color: $grey;
                 }
             }
         }
