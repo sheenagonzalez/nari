@@ -1,18 +1,24 @@
 <template>
 	<div>
-		<AppHeader :events="eventsNavItems" :aam="aamNavItems"/>
-		<Nuxt />
-		<AppFooter :resources="resources" :programs="programs" :events="events" :support="support"/>
+        <AppHeader :events="eventsNavItems" :aam="aamNavItems" />
+        <Nuxt :view="view" />
+        <AppFooter :resources="resources" :programs="programs" :events="events" :support="support" />
+		<!-- <AppHeader v-if="view != 'mobile'" :events="eventsNavItems" :aam="aamNavItems" /> -->
+        <!-- <AppHeaderMobile v-if="view == 'mobile'" :events="eventsNavItems" :aam="aamNavItems" /> -->
+		<!-- <Nuxt :view="view" /> -->
+		<!-- <AppFooter v-if="view != 'mobile'" :view="view" :resources="resources" :programs="programs" :events="events" :support="support"/> -->
 	</div>
 </template>
 
 <script>
 import AppHeader from '~/components/AppHeader.vue'
+import AppHeaderMobile from '~/components/AppHeaderMobile.vue'
 import AppFooter from '~/components/AppFooter.vue'
 export default {
 	components: {
 		AppHeader,
-		AppFooter
+        AppFooter,
+        AppHeaderMobile,
 	},
 	head() {
 		return {
@@ -27,6 +33,7 @@ export default {
 	},
 	data() {
         return {
+            view: 'desktop',
             eventsNavItems: [
                 {
                     sublink: 'Calendar',
@@ -112,6 +119,24 @@ export default {
                 },
             ],
         }
+    },
+    mounted() {
+        if (window.innerWidth <= 640) {
+            this.view = 'mobile';
+        } else if (window.innerWidth > 641 && window.innerWidth <= 1007) {
+            this.view = 'tablet';
+        } else {
+            this.view = 'desktop';
+        }
+        window.onresize = () => {
+            if (window.innerWidth <= 640) {
+                this.view = 'mobile';
+            } else if (window.innerWidth > 641 && window.innerWidth <= 1007) {
+                this.view = 'tablet';
+            } else {
+                this.view = 'desktop'
+            }
+        }
     }
 }
 </script>
@@ -133,7 +158,7 @@ html {
 	}
 }
 /* Portrait Tablets */
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 421px) {
 		html {
 			font-size: 8px;
 	}

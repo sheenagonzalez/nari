@@ -5,12 +5,11 @@
                 <Logo />
             </figure>
             <ul class="menu">
-                <li class="menu-item"><nuxt-link to="/">About</nuxt-link></li>
+                <li class="menu-item"><nuxt-link to="/about">About</nuxt-link></li>
                 <Dropdown title="Events" :items="events" />
                 <li class="menu-item"><nuxt-link to="/research">Research</nuxt-link></li>
                 <li class="menu-item"><nuxt-link to="/">Projects</nuxt-link></li>
-                <Dropdown title="Advanced Air Mobility" :items="aam" />
-                
+                <Dropdown title="Advanced Air Mobility" :items="aam" />    
             </ul>
             <div class="right-container">
                 <div class="search">

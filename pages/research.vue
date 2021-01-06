@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
         <img class="polygon background" src="~/assets/img/polygon.svg"/>
         <div class="main">
             <section id="projects">
@@ -165,6 +166,18 @@ export default {
     },
     data() {
         return {
+            breadcrumbs: [
+                {
+                    text: 'Home',
+                    disabled: false,
+                    href: '/'
+                },
+                {
+                    text: 'Research',
+                    disabled: true,
+                    href: '/research'
+                },
+            ],
             search: '',
             programList: [
                 "The LEARN Project", 
@@ -229,7 +242,7 @@ export default {
                 {
                     for: "The LEARN Project",
                     title: "The LEARN Project",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    description: "The LEARN Project provided opportunities for innovators from outside NASA to perform research, analysis, and proof-of-concept development of their novel ideas that have the potential to meet national aeronautics needs. The Project provided resources for early-stage efforts not supported by NASA Aeronautics Research Mission Directorate (ARMD) Programs and Projects, with the goal of infusing promising concepts into the ARMD research portfolio or into NASA's Small Business Innovation Research (SBIR) program for further development. After eight rounds of awards, the LEARN Project has been phased out. There will be no new LEARN solicitations and awards.",
                     link: "",
                     fileName: "plane-2.png",
                     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -238,7 +251,7 @@ export default {
                 {
                     for: "Seedling Fund",
                     title: "Seedling Fund",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    description: "The Seedling Fund annually provided NASA civil servants the opportunity to perform research, analysis, and proof-of-concept development of their novel ideas that had the potential to meet national aeronautics needs. The Fund provided resources for early-stage efforts not currently supported by ARMD Programs and Projects, with the goal of infusing promising concepts into the ARMD research portfolio or into NASA's Small Business Innovation Research (SBIR) program for further development. After eight rounds of awards, the Seedling Fund was phased out.",
                     link: "",
                     fileName: "plane-2.png",
                     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

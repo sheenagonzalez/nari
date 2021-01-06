@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :class="view">
         <section id="welcome">
             <div class="overlay"></div>
             <video loop muted autoplay src="~/assets/videos/naridev-bg-video.mp4" />
@@ -124,7 +124,8 @@ export default {
     },
     data() {
         return {
-            showMission: false,
+            view: 'desktop',
+            // showMission: false,
             articles:
             [
                 {
@@ -206,224 +207,390 @@ export default {
             ]
         }
     },
+    mounted() {
+        if (window.innerWidth <= 640) {
+            this.view = 'mobile';
+        } else if (window.innerWidth > 641 && window.innerWidth <= 1007) {
+            this.view = 'tablet';
+        } else {
+            this.view = 'desktop';
+        }
+        window.onresize = () => {
+            if (window.innerWidth <= 640) {
+                this.view = 'mobile';
+            } else if (window.innerWidth > 641 && window.innerWidth <= 1007) {
+                this.view = 'tablet';
+            } else {
+                this.view = 'desktop';
+            }
+        }
+    }
 }
 </script>
 
 <style scoped lang="scss">
-.background {
-    position: absolute;
-    z-index: -1;
-}
-.pattern {
-    transform: rotate(180deg);
-    img {
-        width: 3.5rem;
-        height: 35rem;
-        object-fit: cover;
+.desktop, .tablet {
+    .background {
+        position: absolute;
+        z-index: -1;
     }
-    &-one, &-two {
-        left: 0;
-        top: 28rem;
+    .pattern {
+        transform: rotate(180deg);
         img {
-            object-position: 0;
-        }
-    }
-    &-two {
-        top: 64.75rem;
-    }
-    &-three, &-four {
-        top: 135.5rem;
-        right: 0;
-        img {
-            object-position: 100%;
-        }
-    }
-    &-four {
-        top: 172.25rem;
-    }
-}
-.logo-pattern {
-    position: absolute;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-    &-one {
-        width: 90.5%;
-        bottom: -5rem;
-        right: 0rem;
-    }
-    &-two {
-        width: 105%;
-        bottom: -8rem;
-        left: -9.75rem;
-        transform: scaleX(-1);
-        height: 150%;
-        img {
+            width: 3.5rem;
+            height: 35rem;
             object-fit: cover;
-            object-position: 0 100%;
         }
-    }
-}
-h2 {
-    font: $subheadline;
-}
-h1 {
-    font: $headline;
-}
-#welcome {
-    max-width: 100%;
-    max-height: 42rem;
-    overflow: hidden;
-    position: relative;
-    video {
-        filter: grayscale(90%);
-        z-index: 1;
-        display: block;
-        width: 100%;
-    }
-    .overlay {
-        background-color: $med-blue;
-        width: 100%;
-        height: 100%;
-        opacity: .5;
-        position: absolute;
-        z-index: 2;
-    }
-    .text {
-        .card {
-            background-color: white;
-            width: 40.5rem;
-            z-index: 3;
-            position: absolute;
-            top: 35%;
+        &-one, &-two {
             left: 0;
-            padding: 3rem 1rem 3.5rem 9.75rem;
-            border-radius: 0 $m-corner $m-corner 0;
-            h1 {
-                margin-top: .25rem;
-                margin-bottom: 2.5rem;
-            }
-            p {
-                font: $subheadline;
-            }
-            .about-button {
-                @include button;
+            top: 28rem;
+            img {
+                object-position: 0;
             }
         }
-        // .mission {
-        //     margin-top: 4rem;
-        //     .description {
-        //         &-hide {
-        //             visibility: hidden;
-        //             margin-top: 1rem;
-        //         }
-        //         &-show {
-        //             visibility: show;
-        //             margin-top: 1rem;
-        //             transform: translateX(3rem);
-        //             transition: transform .5s;
-        //         }
-        //     }
-        //     svg {
-        //         font-size: 2rem;
-        //         margin-right: 1rem;
-        //         cursor: pointer;
-        //     }
-        // }
-        .continue {
-            position: absolute;
-            bottom: 2%;
-            left: 9.5rem;
-            color: white;
-            z-index: 3;
-            animation: moveUpDown 1s linear infinite;
-            @keyframes moveUpDown {
-                0%, 100% {
-                    bottom: 2%;
-                }
-                70% {
-                    bottom: 1%;
-                }
+        &-two {
+            top: 64.75rem;
+        }
+        &-three, &-four {
+            top: 135.5rem;
+            right: 0;
+            img {
+                object-position: 100%;
             }
-            svg {
-                font-size: 1.25rem;
-                margin-left: .4rem;
-                margin-right: 1.5rem;
-            }
+        }
+        &-four {
+            top: 172.25rem;
         }
     }
-}
-#updates {
-    position: relative;
-    .wrapper {
-        margin: 7rem 11rem 11rem 9.75rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3.25rem;
-        h1 {
-            margin-bottom: 1.25rem;
-        }
-        .button-card {
-            margin: 1rem 0;
-        }
-        .more {
-            color: $med-blue;
-            text-align: right;
-        }
-        &-empty p {
-            color: $bluish-grey;
-            margin-bottom: 3rem;
-        }
-    }
-}
-#projects {
-    @include row;
-    min-height: 41rem;
-    background-color: $med-blue;
-    color: white;
-    margin: 5rem 0;
-    padding: 6rem 3.5rem;
-    .text {
-        width: 22rem;
-        margin-top: 3.5rem;
-        margin-left: 6.25rem;
-        h2 {
-            margin-bottom: 1rem;
-        }
-        h1 {
-            margin-bottom: 5rem;
-        }
-        .more {
-            @include button;
-            color: white;
-            border-color: $bluish-grey;
-            &:hover {
-                background-color: white;
-                color: $med-blue;
-            }
-        }
-    }
-    .graphic {
+    .logo-pattern {
         position: absolute;
-        right: 3.5rem;
-        width: 62%;
-        
-        &-reflection {
-            transform: scaleY(-1);
-            opacity: .2;
-            overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &-one {
+            width: 90.5%;
+            bottom: -5rem;
+            right: 0rem;
+        }
+        &-two {
+            width: 105%;
+            bottom: -8rem;
+            left: -9.75rem;
+            transform: scaleX(-1);
+            height: 150%;
+            img {
+                object-fit: cover;
+                object-position: 0 100%;
+            }
+        }
+    }
+    h2 {
+        font: $subheadline;
+    }
+    h1 {
+        font: $headline;
+    }
+    #welcome {
+        max-width: 100%;
+        max-height: 42rem;
+        overflow: hidden;
+        position: relative;
+        video {
+            filter: grayscale(90%);
+            z-index: 1;
+            display: block;
+            width: 100%;
+        }
+        .overlay {
+            background-color: $med-blue;
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            position: absolute;
+            z-index: 2;
+        }
+        .text {
+            .card {
+                background-color: white;
+                width: 40.5rem;
+                z-index: 3;
+                position: absolute;
+                top: 35%;
+                left: 0;
+                padding: 3rem 1rem 3.5rem 9.75rem;
+                border-radius: 0 $m-corner $m-corner 0;
+                h1 {
+                    margin-top: .25rem;
+                    margin-bottom: 2.5rem;
+                }
+                p {
+                    font: $subheadline;
+                }
+                .about-button {
+                    @include button;
+                }
+            }
+            // .mission {
+            //     margin-top: 4rem;
+            //     .description {
+            //         &-hide {
+            //             visibility: hidden;
+            //             margin-top: 1rem;
+            //         }
+            //         &-show {
+            //             visibility: show;
+            //             margin-top: 1rem;
+            //             transform: translateX(3rem);
+            //             transition: transform .5s;
+            //         }
+            //     }
+            //     svg {
+            //         font-size: 2rem;
+            //         margin-right: 1rem;
+            //         cursor: pointer;
+            //     }
+            // }
+            .continue {
+                position: absolute;
+                bottom: 2%;
+                left: 9.5rem;
+                color: white;
+                z-index: 3;
+                animation: moveUpDown 1s linear infinite;
+                @keyframes moveUpDown {
+                    0%, 100% {
+                        bottom: 2%;
+                    }
+                    70% {
+                        bottom: 1%;
+                    }
+                }
+                svg {
+                    font-size: 1.25rem;
+                    margin-left: .4rem;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+    #updates {
+        position: relative;
+        .wrapper {
+            margin: 7rem 11rem 11rem 9.75rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3.25rem;
+            h1 {
+                margin-bottom: 1.25rem;
+            }
+            .button-card {
+                margin: 1rem 0;
+            }
+            .more {
+                color: $med-blue;
+                text-align: right;
+            }
+            &-empty p {
+                color: $bluish-grey;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    #projects {
+        @include row;
+        min-height: 41rem;
+        background-color: $med-blue;
+        color: white;
+        margin: 5rem 0;
+        padding: 6rem 3.5rem;
+        .text {
+            width: 22rem;
+            margin-top: 3.5rem;
+            margin-left: 6.25rem;
+            h2 {
+                margin-bottom: 1rem;
+            }
+            h1 {
+                margin-bottom: 5rem;
+            }
+            .more {
+                @include button;
+                color: white;
+                border-color: $bluish-grey;
+                &:hover {
+                    background-color: white;
+                    color: $med-blue;
+                }
+            }
+        }
+        .graphic {
+            position: absolute;
+            right: 3.5rem;
+            width: 62%;
+            
+            &-reflection {
+                transform: scaleY(-1);
+                opacity: .2;
+                overflow: hidden;
+            }
+        }
+    }
+    #footprint {
+        margin: 7rem 3.5rem 8rem 9.75rem;
+        position: relative;
+        .wrapper {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
         }
     }
 }
-#footprint {
-    margin: 7rem 3.5rem 8rem 9.75rem;
-    position: relative;
-    .wrapper {
-        margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
+.mobile {
+    .background {
+        display: none;
+    }
+    h2 {
+        font: $subheadline;
+    }
+    h1 {
+        font: $headline-m;
+    }
+    #welcome {
+        max-width: 100%;
+        max-height: 42rem;
+        overflow: hidden;
+        position: relative;
+        video {
+            filter: grayscale(90%);
+            z-index: 1;
+            display: block;
+            width: 100%;
+        }
+        .overlay {
+            background-color: $med-blue;
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            position: absolute;
+            z-index: 2;
+        }
+        .text {
+            .card {
+                background-color: white;
+                width: 40.5rem;
+                z-index: 3;
+                position: absolute;
+                top: 35%;
+                left: 0;
+                padding: 3rem 1rem 3.5rem 9.75rem;
+                border-radius: 0 $m-corner $m-corner 0;
+                h1 {
+                    margin-top: .25rem;
+                    margin-bottom: 2.5rem;
+                }
+                p {
+                    font: $subheadline;
+                }
+                .about-button {
+                    @include button;
+                }
+            }
+            .continue {
+                position: absolute;
+                bottom: 2%;
+                left: 9.5rem;
+                color: white;
+                z-index: 3;
+                animation: moveUpDown 1s linear infinite;
+                @keyframes moveUpDown {
+                    0%, 100% {
+                        bottom: 2%;
+                    }
+                    70% {
+                        bottom: 1%;
+                    }
+                }
+                svg {
+                    font-size: 1.25rem;
+                    margin-left: .4rem;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+    #updates {
+        position: relative;
+        .wrapper {
+            margin: 7rem 11rem 11rem 9.75rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3.25rem;
+            h1 {
+                margin-bottom: 1.25rem;
+            }
+            .button-card {
+                margin: 1rem 0;
+            }
+            .more {
+                color: $med-blue;
+                text-align: right;
+            }
+            &-empty p {
+                color: $bluish-grey;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    #projects {
+        @include row;
+        min-height: 41rem;
+        background-color: $med-blue;
+        color: white;
+        margin: 5rem 0;
+        padding: 6rem 3.5rem;
+        .text {
+            width: 22rem;
+            margin-top: 3.5rem;
+            margin-left: 6.25rem;
+            h2 {
+                margin-bottom: 1rem;
+            }
+            h1 {
+                margin-bottom: 5rem;
+            }
+            .more {
+                @include button;
+                color: white;
+                border-color: $bluish-grey;
+                &:hover {
+                    background-color: white;
+                    color: $med-blue;
+                }
+            }
+        }
+        .graphic {
+            position: absolute;
+            right: 3.5rem;
+            width: 62%;
+            
+            &-reflection {
+                transform: scaleY(-1);
+                opacity: .2;
+                overflow: hidden;
+            }
+        }
+    }
+    #footprint {
+        margin: 7rem 3.5rem 8rem 9.75rem;
+        position: relative;
+        .wrapper {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+        }
     }
 }
 </style>

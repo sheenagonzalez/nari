@@ -1,7 +1,7 @@
 <template>
-    <footer>
+    <footer :class="view">
         <div class="left-container">
-            <nav class="links">
+            <nav class="links" v-if="view != 'mobile'">
                 <div class="resources">
                     <h1>Resources for</h1>
                     <ul class="menu">
@@ -77,7 +77,7 @@
 <script>
 export default {
     name: "AppFooter",
-    props: ["resources", "programs", "events", "support"],
+    props: ["view", "resources", "programs", "events", "support"],
 }
 </script>
 
