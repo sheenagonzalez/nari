@@ -208,10 +208,6 @@ h2 {
 .background {
     position: absolute;
     z-index: -1;
-    img {
-        object-fit: cover;
-        object-position: 0 100%;
-    }
 }
 #header {
     .main {
@@ -422,8 +418,12 @@ h2 {
     .pattern {
         right: 0;
         top: 8rem;
+        width: 3.5rem;
+        height: 32.5rem;
         img {
-            object-position: 13.5rem 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     .title {
