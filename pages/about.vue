@@ -110,33 +110,43 @@
                 <img src="~/assets/img/city-grid-pattern.svg"/>
             </div>
         </section>
-        <!-- <section id="contact">
-            <h1>Get <b>in touch</b>.</h1>
-            <div class="wrapper">
+        <section id="contact">
+            <div class="title">
+                <h1>Get <b>in touch</b>.</h1>
+            </div>
+            <div class="content">
                 <div class="social">
+                    <div class="background wrapper"></div>
                     <img src="~/assets/img/plane-icon.svg" />
-                    <h2><b>Connect</b></h2>
-                    <p>Follow us on social media.</p>
-                    <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'twitter']" /></nuxt-link>
-                    <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'facebook']" /></nuxt-link>
-                    <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'instagram']" /></nuxt-link>
+                    <div class="links">
+                        <h2><b>Connect</b></h2>
+                        <p>Follow us on social media.</p>
+                        <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'twitter']" /></nuxt-link>
+                        <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'facebook']" /></nuxt-link>
+                        <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'instagram']" /></nuxt-link>
+                    </div>
                 </div>
                 <form class="form">
                     <p>Interested in learning more or exploring opportunities with us? Reach out to our team and we’ll be happy to help.</p>
-                    <label for="fname">First name</label>
-                    <input type="text" id="fname" name="fname" placeholder="First name" />
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Last name" />
-                    <label for="email">E-mail address</label>
-                    <input type="text" id="email" name="email" placeholder="E-mail" />
-                    <label for="phone">Phone number</label>
-                    <input type="text" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" />
-                    <label for="message">Message</label>
-                    <input type="text" id="message" name="message" placeholder="Enter your message here..." />
+                    <label for="fname">First name
+                        <input type="text" id="fname" name="fname" placeholder="First name" />
+                    </label>
+                    <label for="lname">Last name
+                        <input type="text" id="lname" name="lname" placeholder="Last name" />
+                    </label>
+                    <label for="email">E-mail address
+                        <input type="text" id="email" name="email" placeholder="E-mail" />
+                    </label>
+                    <label for="phone">Phone number
+                        <input type="text" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" />
+                    </label>
+                    <label for="message">Message
+                        <textarea id="message" name="message" rows="3" placeholder="Enter your message here..." />
+                    </label>
                     <input type="submit" value="Submit"/>
                 </form>
             </div>
-        </section> -->
+        </section>
     </div>
 </template>
 
@@ -411,7 +421,7 @@ h2 {
     position: relative;
     .pattern {
         right: 0;
-        top: 14rem;
+        top: 8rem;
         img {
             object-position: 13.5rem 100%;
         }
@@ -434,6 +444,88 @@ h2 {
             h2 {
                 color: $med-blue;
                 margin-bottom: 1rem;
+            }
+        }
+    }
+}
+#contact {
+    margin: 0 9.75rem;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    .title {
+        width: 100%;
+        height: 100%;
+        padding: .75rem 1rem .25rem;
+        text-align: center;
+        background-color: $dark-blue;
+        color: white;
+        border-radius: $m-corner;
+        z-index: 3;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2.25fr;
+        .social {
+            position: relative;
+            .wrapper {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $light-blue;
+                opacity: .5;
+            }
+            img {
+                
+            }
+            .links {
+                position: relative;
+                margin: 1.5rem;
+                top: -1.5rem;
+                p {
+                    margin-top: .5rem;
+                    margin-bottom: 1rem;
+                }
+                svg {
+                    margin-right: 2rem;
+                    width: 2rem;
+                    height: 2rem;
+                    color: $med-blue;
+                    &:hover {
+                        color: $bluish-grey;
+                    }
+                }
+            }
+        }
+        .form {
+            margin: 5rem 0 8rem 6rem;
+            margin-top: 5rem;
+            width: 30rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            p {
+                grid-column: 1 / 3;
+            }
+            label {
+                font: $caption;
+                @include column;
+                input[type=text], textarea {
+                    font: $body;
+                    padding: .75rem 1rem;
+                    border-radius: $s-corner;
+                }
+                ::placeholder {
+                    font: $caption;
+                    color: $bluish-grey;
+                }
+            }
+            label[for=message] {
+                grid-column: 1 / 3;
+            }
+            input[type=submit] {
+                padding: 1rem 1rem;
+                max-width: 11.25rem;
+                @include button;
             }
         }
     }

@@ -30,6 +30,7 @@
     color: $dark-blue;
     border: .0625rem solid $bluish-grey;
     border-radius: $s-corner;
+    cursor: pointer;
     &:hover {
         border-color: $med-blue;
         background-color: $med-blue;
