@@ -474,9 +474,6 @@ h2 {
                 background: $light-blue;
                 opacity: .5;
             }
-            img {
-                
-            }
             .links {
                 position: relative;
                 margin: 1.5rem;

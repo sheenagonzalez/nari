@@ -415,13 +415,7 @@ export default {
                 margin-bottom: 5rem;
             }
             .more {
-                @include button;
-                color: white;
-                border-color: $bluish-grey;
-                &:hover {
-                    background-color: white;
-                    color: $med-blue;
-                }
+                @include button-alt;
             }
         }
         .graphic {

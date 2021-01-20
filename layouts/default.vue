@@ -37,85 +37,85 @@ export default {
             eventsNavItems: [
                 {
                     sublink: 'Calendar',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Highlights',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Files',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Recordings',
-                    path: '/'
+                    path: ''
                 },
             ],
             aamNavItems: [
                 {
                     sublink: 'Ecosystem Working Groups',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Supply Chain Working Groups',
-                    path: '/'
+                    path: ''
                 },
             ],
             programs: [
                 {
-                    sublink: 'Initiatives',
-                    path: '/'
+                    sublink: 'Projects',
+                    path: '/projects'
                 },
                 {
                     sublink: 'Research',
-                    path: '/'
+                    path: '/research'
                 },
                 {
                     sublink: 'News',
-                    path: '/'
+                    path: ''
                 }
             ],
             events: [
                 {
                     sublink: 'AAM',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'IFAR',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Database',
-                    path: '/'
+                    path: ''
                 },
 			],
 			resources: [
                 {
                     sublink: 'Community',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Students',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Researchers',
-                    path: '/'
+                    path: ''
                 },
 			],
 			support: [
                 {
                     sublink: 'NASA Privacy Policy',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Web Support',
-                    path: '/'
+                    path: ''
                 },
                 {
                     sublink: 'Contact Us',
-                    path: '/'
+                    path: '/about#contact'
                 },
             ],
         }

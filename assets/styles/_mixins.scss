@@ -38,3 +38,16 @@
         transition: .2s;
     }
 }
+@mixin button-alt {
+    padding: 1rem 1.75rem;
+    color: white;
+    border: .0625rem solid $bluish-grey;
+    border-radius: $s-corner;
+    cursor: pointer;
+    &:hover {
+        border-color: $med-blue;
+        background-color: white;
+        color: $med-blue;
+        transition: .2s;
+    }
+}

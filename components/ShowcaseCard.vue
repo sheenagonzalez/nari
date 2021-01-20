@@ -1,17 +1,27 @@
 <template>
-    <div :class="['card', alignment == 'left' ? 'left' : 'right']">
-        <div class="background">
-            <div class="solid"></div>
-            <img class="pattern" src="~/assets/img/city-grid-pattern.svg"/>
-        </div>
-        <div class="content">
+    <div>
+        <div v-if="alignment == 'left'" class="left wrapper">
             <div class="image">
                 <img :src="imgLink" :alt="fileName"/>
             </div>
             <div class="info">
-                <h1>{{ title }}</h1>
-                <p>{{ description }}</p>
-                <a :href="link" class="button">Learn more ></a>
+                <div class="text">
+                    <h1>{{ title }}</h1>
+                    <p>{{ description }}</p>
+                    <a :href="link" class="button">Learn more ></a>
+                </div>
+            </div>
+        </div>
+        <div v-if="alignment == 'right'" class="right wrapper">
+            <div class="info">
+                <div class="text">
+                    <h1>{{ title }}</h1>
+                    <p>{{ description }}</p>
+                    <a :href="link" class="button">Learn more ></a>
+                </div>
+            </div>
+            <div class="image">
+                <img :src="imgLink" :alt="fileName"/>
             </div>
         </div>
     </div>
@@ -37,61 +47,58 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.card {
-    z-index: 1;
-    background-color: white;
-    border-radius: $l-corner;
-    width: 93.5%;
-    position: relative;
-    right: 0;
-    .background {
-        z-index: 2;
-        position: absolute;
-        left: 0;
-        top: 4rem;
-        .pattern {
-            transform: rotate(-90deg);
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+    .image {
+        border-radius: $m-corner;
+        width: 100%;
+        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
-    .content {
-        display: grid;
-        grid-template-columns: 1.115fr .885fr;
-        grid-gap: 4.25rem;
-        padding: 4rem 2.25rem;
-        .image {
-            z-index: 3;
-        }
-        .info {
-            z-index: 3;
+    .info {
+        border-radius: $m-corner;
+        .text {
             h1 {
                 font: $headline;
-                margin-bottom: 1rem;
+                font-weight: bold;
+                margin-bottom: 1.5rem;
             }
             p {
-                margin-bottom: 4.25rem;
+                margin-bottom: 4.5rem;
             }
-            .button {
-                @include button;
-            }
+            width: 100%;
+            padding: 3.5rem 13%;
         }
     }
 }
 .left {
-    .content {
-        padding-left: 0;
+    .image {
+        grid-column: 1 / 2;
+    }
+    .info {
+        grid-column: 2 / 3;
+        background-color: $med-blue;
+        color: white;
+        .button {
+            @include button-alt;
+        }
     }
 }
 .right {
-    .content {
-        padding-right: 0;
-        .image {
-            grid-column: 2;
-            grid-row: 1;
+    .info {
+        grid-column: 1 / 2;
+        background-color: white;
+        .button {
+            @include button;
         }
-        .info {
-            grid-column: 1;
-            grid-row: 1;
-        }
+    }
+    .image {
+        grid-column: 2 / 3;
     }
 }
 </style>
