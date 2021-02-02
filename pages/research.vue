@@ -3,7 +3,7 @@
         <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
         <img class="polygon background" src="~/assets/img/polygon.svg"/>
         <div class="main">
-            <section id="projects">
+            <section id="researchNodes">
                 <!-- Advanced Search (Side bar) -->
                 <div class="side-wrapper">
                     <nav class="sticky-nav">
@@ -12,14 +12,14 @@
                             <h2>Search</h2>
                             <div class="search">
                                 <fa class="search-icon" icon="search" />
-                                <input class="search-input" type="text" v-model="search" placeholder="Enter keywords here.." @input="updateVisibleProjects" />
+                                <input class="search-input" type="text" v-model="search" placeholder="Enter keywords here.." @input="updateVisibleResearchCards" />
                             </div>
                         </div>
                         <div class="filter">
                             <h2>Filters</h2>
                             <div>
                                 <p class="filter-title">Programs</p>
-                                <Checkbox :options="programList" :checkedOptions="checkedPrograms" v-model="checkedPrograms" @input="updateVisibleProjects" />
+                                <Checkbox :options="programList" :checkedOptions="checkedPrograms" v-model="checkedPrograms" @input="updateVisibleResearchCards" />
                             </div>
                             <div>
                                 <p class="filter-title">Discipline Area</p>
@@ -32,30 +32,34 @@
                                     :max-height="150"
                                     :show-labels="false"
                                     :limit="3"
-                                    @input="updateVisibleProjects"
+                                    @input="updateVisibleResearchCards"
                                     placeholder="Select">
                                 </multiselect>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <!-- List of Collapsible Projects -->
+                <!-- List of Collapsible ResearchCards -->
                 <div class="list">
                     <h1>Past <b>Research</b></h1>
-                    <Project v-for="(data, i) in visibleProjects" :key="i"
-                        :projectType="data.projecttype"
+                    <ResearchCard v-for="(data, i) in visibleResearchCards" :key="i"
+                        :researchType="data.researchtype"
                         :phase="data.phase"
                         :title="data.title"
-                        :startDate="data.startDate"
-                        :endDate="data.endDate"
-                        :description="data.description"
+                        :startDate="data.startdate"
+                        :endDate="data.enddate"
                         :principalInvestigator="data.principalinvestigator"
                         :organization="data.organization"
                         :coInvestigators="data.coinvestigators"
                         :tags="data.tags"
+                        :description="data.description"
+                        :video="data.video"
+                        :slides="data.slides"
+                        :report="data.report"
+                        :additionalAttachment="data.additionalattachment"
                     />
                     <Pagination v-on:page:update="updatePage"
-                        :items="projectsData"
+                        :items="researchData"
                         :currentPage="currentPage"
                         :pageSize="pageSize"
                         :limit="5"
@@ -78,17 +82,17 @@
 </template>
 
 <script>
-import Project from "~/components/Project.vue";
+import ResearchCard from "~/components/ResearchCard.vue";
 import Checkbox from "~/components/Checkbox.vue";
 import Multiselect from "vue-multiselect";
-import projectsJson from "~/json/projects.json";
+import researchDataJson from "~/json/researchData.json";
 import Pagination from "~/components/Pagination.vue";
 import Carousel from "~/components/Carousel.vue";
 
 export default {
     head() {
         return {
-            title: 'Projects',
+            title: 'Past Research',
             meta: [
                 {
                 hid: 'description',
@@ -99,7 +103,7 @@ export default {
         }
     },
     components: {
-        Project, 
+        ResearchCard, 
         Checkbox,
         Multiselect,
         Pagination,
@@ -109,57 +113,57 @@ export default {
         // Update the page number
         updatePage(pageNumber) {
             this.currentPage = pageNumber;
-            this.updateVisibleProjects();
+            this.updateVisibleResearchCards();
         },
-        // Update which projects to show according to current page number
-        updateVisibleProjects() {
-            this.filterProjects();
-            this.visibleProjects = this.filteredProjects.slice(this.currentPage * this.pageSize, (this.currentPage * this.pageSize) + this.pageSize);
-            // Go back a page if we have 0 visible projects
-            if (this.visibleProjects.length == 0 && this.currentPage > 0) {
+        // Update which research to show according to current page number
+        updateVisibleResearchCards() {
+            this.filterResearchCards();
+            this.visibleResearchCards = this.filteredResearchCards.slice(this.currentPage * this.pageSize, (this.currentPage * this.pageSize) + this.pageSize);
+            // Go back a page if we have 0 visible research
+            if (this.visibleResearchCards.length == 0 && this.currentPage > 0) {
                 this.updatePage(this.currentPage - 1);
             }
         },
-        filterProjects() {
-            var results = this.projectsData.filter((project) => {
+        filterResearchCards() {
+            var results = this.researchData.filter((research) => {
                 var tagMatched = this.selectedTags.length == 0;
-                if (!tagMatched && project.tags) {
+                if (!tagMatched && research.tags) {
                     for (var selectedTagIndex in this.selectedTags) {
-                        tagMatched = this.selectedTags[selectedTagIndex].match(project.tags);
+                        tagMatched = this.selectedTags[selectedTagIndex].match(research.tags);
                         if (tagMatched) {
                             break;
                         }
                     }
                 }
-                // Show projects that match checked programs
-                var programMatched = this.checkedPrograms.includes(project.projecttype);
-                // Show projects that match search keywords
+                // Show research that match checked programs
+                var programMatched = this.checkedPrograms.includes(research.researchtype);
+                // Show research that match search keywords
                 var searchMatched = true;
                 if (this.search) {
                     searchMatched = false;
                     var principalInvestigatorMatched, coInvestigatorsMatched, organizationMatched, descriptionMatched = false;
                     var lSearch = this.search.toLowerCase();
-                    if (project.principalinvestigator) {
-                        principalInvestigatorMatched = (project.principalinvestigator.match(this.search) || project.principalinvestigator.toLowerCase().match(lSearch));
-                    } if (project.coinvestigators) {
-                        coInvestigatorsMatched = (project.coinvestigators.match(this.search) || project.coinvestigators.toLowerCase().match(lSearch)); 
-                    } if (project.organization) {
-                        organizationMatched = (project.organization.match(this.search) || project.organization.toLowerCase().match(lSearch));
-                    } if (project.description) {
-                        descriptionMatched = (project.description.match(this.search) || project.description.toLowerCase().match(lSearch));
+                    if (research.principalinvestigator) {
+                        principalInvestigatorMatched = (research.principalinvestigator.match(this.search) || research.principalinvestigator.toLowerCase().match(lSearch));
+                    } if (research.coinvestigators) {
+                        coInvestigatorsMatched = (research.coinvestigators.match(this.search) || research.coinvestigators.toLowerCase().match(lSearch)); 
+                    } if (research.organization) {
+                        organizationMatched = (research.organization.match(this.search) || research.organization.toLowerCase().match(lSearch));
+                    } if (research.description) {
+                        descriptionMatched = (research.description.match(this.search) || research.description.toLowerCase().match(lSearch));
                     }
-                    searchMatched = ((project.title.toLowerCase().match(lSearch)) || coInvestigatorsMatched || principalInvestigatorMatched || organizationMatched || descriptionMatched);
+                    searchMatched = ((research.title.toLowerCase().match(lSearch)) || coInvestigatorsMatched || principalInvestigatorMatched || organizationMatched || descriptionMatched);
                 }
                 return tagMatched && programMatched && searchMatched;
             });
-            this.filteredProjects = results;
+            this.filteredResearchCards = results;
         }
     },
-    // Show first page of projects upon page load
+    // Show first page of research items upon page load
     async created() {
         try {
             this.checkedPrograms = this.programList.flat();
-            this.updateVisibleProjects();
+            this.updateVisibleResearchCards();
         } catch (err) {
             console.log(err);
         }
@@ -183,13 +187,13 @@ export default {
                 "The LEARN Project", 
                 "Seedling Fund"
             ],
-            projectsData: projectsJson,
+            researchData: researchDataJson,
             pageSize: 7,
             currentPage: 0,
-            visibleProjects: [],
+            visibleResearchCards: [],
             checkedPrograms: [],
             selectedTags: [],
-            filteredProjects: [],
+            filteredResearchCards: [],
             // Discipline Area tags
             tagList: [
                 "Aeroacoustics",
@@ -242,7 +246,7 @@ export default {
                 {
                     for: "The LEARN Project",
                     title: "The LEARN Project",
-                    description: "The LEARN Project provided opportunities for innovators from outside NASA to perform research, analysis, and proof-of-concept development of their novel ideas that have the potential to meet national aeronautics needs. The Project provided resources for early-stage efforts not supported by NASA Aeronautics Research Mission Directorate (ARMD) Programs and Projects, with the goal of infusing promising concepts into the ARMD research portfolio or into NASA's Small Business Innovation Research (SBIR) program for further development. After eight rounds of awards, the LEARN Project has been phased out. There will be no new LEARN solicitations and awards.",
+                    description: "The LEARN Project provided opportunities for innovators from outside NASA to perform research, analysis, and proof-of-concept development of their novel ideas that have the potential to meet national aeronautics needs. The ResearchItem provided resources for early-stage efforts not supported by NASA Aeronautics Research Mission Directorate (ARMD) Programs and Projects, with the goal of infusing promising concepts into the ARMD research portfolio or into NASA's Small Business Innovation Research (SBIR) program for further development. After eight rounds of awards, the LEARN Project has been phased out. There will be no new LEARN solicitations and awards.",
                     link: "",
                     fileName: "plane-2.png",
                     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -336,7 +340,7 @@ export default {
         font: $subheadline;
         font-weight: bold;
     }
-    #projects {
+    #researchNodes {
         margin: 3rem 5rem;
         display: flex;
         .sticky-nav {

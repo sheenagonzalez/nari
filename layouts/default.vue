@@ -36,19 +36,19 @@ export default {
             view: 'desktop',
             eventsNavItems: [
                 {
+                    sublink: 'Upcoming Events',
+                    path: ''
+                },
+                {
+                    sublink: 'Recent Highlights',
+                    path: '/recent_highlights'
+                },
+                {
+                    sublink: 'All Archives',
+                    path: '/all_archives'
+                },
+                {
                     sublink: 'Calendar',
-                    path: ''
-                },
-                {
-                    sublink: 'Highlights',
-                    path: ''
-                },
-                {
-                    sublink: 'Files',
-                    path: ''
-                },
-                {
-                    sublink: 'Recordings',
                     path: ''
                 },
             ],
@@ -87,7 +87,7 @@ export default {
                 },
                 {
                     sublink: 'Database',
-                    path: ''
+                    path: '/events'
                 },
 			],
 			resources: [

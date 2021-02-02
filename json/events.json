@@ -1,0 +1,1688 @@
+[
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: Surface Metering Briefing - Initial Analysis, Impact, and Evolution",
+        "date": "2018",
+        "speakers": "Multiple Presenters",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/ppi3hzbsqqt5/"
+    },
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: Latest IADS Capabilities",
+        "date": "2018",
+        "speakers": "Multiple Presenters",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pskmt276u9uy/"
+    },
+    {
+        "category": "IFAR",
+        "title": "A Comparison of Strong and Weak Coupling Schemes for Computational Aeroelasticity in OpenFOAM",
+        "date": "2018",
+        "speakers": "Sabet Seraj",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pmkr3fsok4qh/"
+    },
+    {
+        "category": "IFAR",
+        "title": "Von Karman Institute for Fluid Dynamics (Brussels, Belgium) PhD Symposium",
+        "date": "2018",
+        "speakers": "Multiple Presenters",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p38bpuvbh1q3/"
+    },
+    {
+        "category": "IFAR",
+        "title": "Validation of Intermittency Model for Transition Prediction in a RANS Flow Solver",
+        "date": "2018",
+        "speakers": "Donato de Rosa",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pe9ea5ukfm5r/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Early Career Network (ECN)",
+        "title": "IFAR Early Career Network Virtual Gathering",
+        "date": "2017",
+        "speakers": "Amin Fereidooni",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pkf1suf5njc1/"
+    },
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: Real-time Dashboard, Post Ops, Current Reports, Data Analysis",
+        "date": "2017",
+        "speakers": "Al Capps",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p0qj69kse927/"
+    },
+    {
+        "category": "IFAR",
+        "title": "IFAR Technical Interchange: GPU-accelarated CFD Simulations for Turbomachinery Design Optimization",
+        "date": "2017",
+        "speakers": "Mohamed Aissa",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pd72uj9bv6uj/"
+    },
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: General Briefing, Field \"go-live\" status update",
+        "date": "2017",
+        "speakers": "Al Capps",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/piwzvb41n6mg/"
+    },
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: Ramp Traffic Tools, Capabilities, Best Practices",
+        "date": "2017",
+        "speakers": "Al Capps",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pesxs4dcd92t/"
+    },
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: Remote Demo (cont.)",
+        "date": "2017",
+        "speakers": "Yoon Jung",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4659zzvll6e/"
+    },
+    {
+        "category": "Airspace Technology Demonstration",
+        "title": "ATD 2: Remote Demo",
+        "date": "2017",
+        "speakers": "Al Capps",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/pd05eomsqcf0/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "From Invention to Patent",
+        "date": "2017",
+        "speakers": "Jason Davis",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/py19j5e2alht/"
+    },
+    {
+        "category": "NASA",
+        "title": "NASA SBIR/STTR Industry Day - Small Business Update: NASA's Office of Small Business Programs",
+        "date": "2017",
+        "speakers": "Tabisa Kalisa",
+        "platform": "YouTube",
+        "video": "https://www.youtube.com/watch?v=YJu5u9r1pTA"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "JAXA's Research and Development of Unmaned Aircraft System Technology for a Disaster Risk Reduction",
+        "date": "2017",
+        "speakers": "Daisuke Kubo",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p4mubx9hwc7a/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "Computational Analysis and Proposed Redesign of the 3-Stage Axial Compressor in the 11-by-11-Foot Transonic Wind Tunnel at NASA Ames Research Center",
+        "date": "2017",
+        "speakers": "Sameer Kulkarni",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p1g8h5j1lufm"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Autonomous Surface Operations: Operational Architectures and Paths to Deployment",
+        "date": "2017",
+        "speakers": "Robert Morris",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p4zpsqu77mc/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Human Autonomy Teaming Measures",
+        "date": "2017",
+        "speakers": "Mike Matessa",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p8s6raxt541/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Autonomy Operating System: towards Pilot-in-a-Box",
+        "date": "2017",
+        "speakers": "Michael Lowry",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p9a9kdp1c9y/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Unmanned Aerial System (UAS) Traffic Management System for Safety Enabling Low-altitude UAS Operations",
+        "date": "2017",
+        "speakers": "Parimal Kopardekar",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p4fifb1xai9/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Enabling Safe and Autonomous Flight Operations of Small-UAS in High-density Low-altitude Urban Environments",
+        "date": "2017",
+        "speakers": "Corey Ippolito",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p8fs4ixi142/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "The Challenge of Human-autonomy Teaming",
+        "date": "2017",
+        "speakers": "Alonso Vera",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p6inqrg7qon/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Autonomy, From Dull, Dirty and Dangerous to Smart, Simple and Secure",
+        "date": "2017",
+        "speakers": "Kory Mattews",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p6hy7z2jl3a/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Next Generation Cockpit Technology",
+        "date": "2017",
+        "speakers": "Jeremy Chavez",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p9sp4umggze/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "Prototype Design and Computational Fluid Dynamics",
+        "date": "2017",
+        "speakers": "Alexandru Persinaru",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p84sjbmzai5/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Towards Autonomous Airport Surface Operations: NextGen Flight Deck Implications",
+        "date": "2017",
+        "speakers": "David Foyle",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p7i3u4m8coh/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Aviation Cyber Security: Threats, Mitigations, and Research Directions",
+        "date": "2017",
+        "speakers": "Krishna Sampigethaya",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p7mpq8uknhu/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Cockpit Hierarchical Activity Planning and Execution",
+        "date": "2017",
+        "speakers": "J Benton",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p9h00uydfl1/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Aircraft Capability Management",
+        "date": "2017",
+        "speakers": "Randall Mumaw",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p2usobkw6md/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "HAT Tricks: Understanding Human Autonomy Teaming through Applications",
+        "date": "2017",
+        "speakers": "Bimal Aponso",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p4vgo0rxzdk/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Flight Test Results for Mission-adaptive Autonomy",
+        "date": "2017",
+        "speakers": "Matt Whaley",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p7iglisdcpi/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Automated Sequential Decision Making Under Uncertainty for Aerospace Applications",
+        "date": "2017",
+        "speakers": "Edward Balaban",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p7v7zoyve6i/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Autonomous, Task Management and Decision Support Tools",
+        "date": "2017",
+        "speakers": "Barbara Burian",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p79lkognbcy/"
+    },
+    {
+        "category": "Autonomy and the Next Generation Flight Deck Symposium",
+        "title": "Developing a General Framework for Autonomy Teaming",
+        "date": "2017",
+        "speakers": "Joel Lachter",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p7pjte808e2/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "Real-Time Safety Monitoring and Prediction in the National Airspace",
+        "date": "2017",
+        "speakers": "Matthew Daigle",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p1l2ijbhncw/"
+    },
+    {
+        "category": "IFAR",
+        "title": "Von Karman Institute (VKI) for Fluid Dynamics PhD Research Symposium",
+        "date": "2017",
+        "speakers": "Multiple Presenters",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p5n40pxh2l6/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "Unmanned Aircraft Systems Activities within ONERA",
+        "date": "2017",
+        "speakers": "Henry De Plinval",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p3650wuhaki/"
+    },
+    {
+        "category": "NASA",
+        "title": "NASCAR Meets NASA",
+        "date": "2016",
+        "speakers": "Jesse Iwuji",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2iqswxcz45/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "AIRCAST – A model suite for the next generation of aviation scenarios",
+        "date": "2016",
+        "speakers": "Robin Ghosh",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p1afooyb95r/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Fit Model Presentation & Interactive",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2ay28mwnl4/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Analysis Mgr, Results Mgr, Python",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p3ijnnr4xp1/?archiveOffset=2116000"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Design vars & xddm, API, Scripting",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p3ijnnr4xp1/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Flightstream",
+        "date": "2016",
+        "speakers": "Roy Hartfield",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6kfjoz5ztn/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "CompGeom and Meshing",
+        "date": "2016",
+        "speakers": "Rob McDonald ",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p17lljktqtj/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Aircraft design framework with OpenVSP in the loop",
+        "date": "2016",
+        "speakers": "Alessandro Davi",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p5k9xjgplgc/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "NDARC Integration",
+        "date": "2016",
+        "speakers": "Travis Perry",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p9ambqj7vjv/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Projected Area",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p8iyz1545a7/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Aerodatabases with GoCart & Cart3D",
+        "date": "2016",
+        "speakers": "Matt McMullen",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7xck0o2i7i/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Drag buildup",
+        "date": "2016",
+        "speakers": "Bryan Schmidt",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p67o5ism0xo/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Wave Drag",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p69373hbtds/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Custom Components",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p1hvnykikem/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Leveraging DegenGeom for Multi-fidelity Analysis",
+        "date": "2016",
+        "speakers": "Erik Olson",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p8s6r9ma3v6/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Advanced Parameter Linking",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p88owm6c495/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "VSPAERO SUGAR braced wing aero",
+        "date": "2016",
+        "speakers": "Doug Wells",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p9og038q4y7/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "VSPAERO Verification & Next Steps",
+        "date": "2016",
+        "speakers": "Dave Kinney",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7i3u3ar8x3/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "VSPAERO GUI Panel Method",
+        "date": "2016",
+        "speakers": "Nick Brake",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4o0opuozwl/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "VSPAERO GUI VLM Advanced",
+        "date": "2016",
+        "speakers": "Nick Brake",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p97fh700spw/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "VSPAERO GUI VLM Basics",
+        "date": "2016",
+        "speakers": "Nick Brake",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p1wrmhs2bsb/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "VSPAERO Theory",
+        "date": "2016",
+        "speakers": "Dave Kinney",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2kvd9gcma7/?archiveOffset=1820000"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "RapidFEM & PBWeight",
+        "date": "2016",
+        "speakers": "Tyler Winter",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2kvd9gcma7/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Mass Properties",
+        "date": "2016",
+        "speakers": "Mark McMillin",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p1cx0g5xep9/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "TOW Steered Wing Structure Design",
+        "date": "2016",
+        "speakers": "Mike Henson",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p5rd5ewpz86/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Structural Modeling and OpenVSP",
+        "date": "2016",
+        "speakers": "Trevor Laughlin",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p5kmoxna10n/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "FEM from VSP Models",
+        "date": "2016",
+        "speakers": "Wu Li",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p57ijdal23n/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Modeling Demo",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4gkpg881hc/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Saved Parameter Settings",
+        "date": "2016",
+        "speakers": "Bryan Schmidt",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7h1jwrjb5u/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Conformal Components Demo",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4v3wl9mssz/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Conformal Components",
+        "date": "2016",
+        "speakers": "J.R. Gloudemans",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7vkr1sy2jz/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Advanced Wing Modeling",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2qwaycrk7i/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Skinning explained",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p8y7oyin4di/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Attach, symmetry, sets, subsurfaces",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p1sihrp7vou/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "NASA SBIR Report",
+        "date": "2016",
+        "speakers": "Nick Brake",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p63rs6wdxui/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "XSecs in detail",
+        "date": "2016",
+        "speakers": "Brandon Litherland",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2hoipw113b/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "USAF SBIR Report",
+        "date": "2016",
+        "speakers": "Ben Schlitgen",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6mk41zy2kz/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Cal Poly NRA Final Review",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6zbi86g3zh/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Tour of main components",
+        "date": "2016",
+        "speakers": "Brandon Litherland",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p2i1a42615d/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Basic modeling",
+        "date": "2016",
+        "speakers": "Brandon Litherland",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p9c1db7m3an/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Introduction to OpenVSP",
+        "date": "2016",
+        "speakers": "Brandon Litherland",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p1wrmhrbbm7/"
+    },
+    {
+        "category": "OpenVSP Workshop",
+        "title": "Welcome and Overview",
+        "date": "2016",
+        "speakers": "Rob McDonald",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4gxgueb41x/"
+    },
+    {
+        "title": "Centrifugally Powered Pneumatic De-Icing for Helicopter Rotor Blades",
+        "date": "2016",
+        "speakers": "Christopher Allen",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7jvn22aftz/"
+    },
+    {
+        "title": "Cooperative Gust Sensing and Suppression for Aircraft Formation Flight",
+        "date": "2016",
+        "speakers": "Gregory C Carr",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4vtfdjaa2y/"
+    },
+    {
+        "category": "IFAR",
+        "subcategory": "Technical Interchange",
+        "title": "Composites, Ceramics and Coatings: Game-Changing Materials for the Next Generation of Turbine Engines",
+        "date": "2016",
+        "speakers": "Bryan J Harder",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p36ujmuiw09/"
+    },
+    {
+        "title": "21st Century Aviation ­Challenges and Opportunities at the 47th Annual Meeting of Japan Society of Aeronautical and Space Science",
+        "date": "2016",
+        "speakers": "Jaiwon Shin",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p5u78isawfc/"
+    },
+    {
+        "category": "University Leadership Initiative (ULI)",
+        "title": "ARMD - University Leadership Initiative Vendor’s Forum",
+        "date": "2016",
+        "speakers": "Richard Barhydt",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p830q9ivtl9/"
+    },
+    {
+        "category": "IFAR",
+        "title": "Von Karman Institute for Fluid Dynamics (Brussels) PhD Symposium",
+        "date": "March 3, 2016",
+        "speakers": "Valerie Wiesner,\nYakut Cansev Kucukosman, \nDaniel Guariglia, \nGiulia Dell’era",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p5fo1db15ix/"
+    },
+    {
+        "title": "Design, Analysis, and Evaluation of a Novel Propulsive Wing Concept",
+        "date": "2016",
+        "speakers": "Brian Kramer",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p9ndpumbsng/"
+    },
+    {
+        "title": "Concept for order-of-magnitude increase in electrical machine power density",
+        "date": "2016",
+        "speakers": "Kiruba Haran",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p32levxkc2e/"
+    },
+    {
+        "title": "Big Aviation Data Mining for Robust, Ultra-Efficient Air Transportation",
+        "date": "2016",
+        "speakers": "Richard DeLaura, \nThomas Reynolds",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p482fy0oys5/"
+    },
+    {
+        "title": "Feasibility Study of Using Matrix-Stabilized Combustion Technologies to Enable Ultra-low Emission Combustion in Aviation Gas Turbines",
+        "date": "2016",
+        "speakers": "Mattias Ihme",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6lhtte8t1d/"
+    },
+    {
+        "category": "The LEARN Project",
+        "subcategory": "Keynote",
+        "title": "Session Keynote 2016 LEARN Technical Seminar",
+        "date": "2016",
+        "speakers": "Nateri Madavan",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p4z09v2eu4s/"
+    },
+    {
+        "category": "Seedling Fund",
+        "subcategory": "Keynote",
+        "title": "Session Keynote 2015 Seedling Technical Seminar - Structures and Health Monitoring",
+        "date": "2015",
+        "speakers": "Dale Hopkins",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p6mk3zkfzrc/"
+    },
+    {
+        "title": "Functionally Tailored Multi-Component Composite Structures via Additive Manufacturing",
+        "date": "2015",
+        "speakers": "Andy Newman",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p6mk3zkfzrc/?archiveOffset=463000"
+    },
+    {
+        "title": "Coupling Damage-sensing Particles and Computational Micromechanics to enable the Digital Twin concept",
+        "date": "2015",
+        "speakers": "Jacob Hochhalter",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p5v9iocj6yp/"
+    },
+    {
+        "category": "Seedling Fund",
+        "subcategory": "Keynote",
+        "title": "Session Keynote 2015 Seedling Technical Seminar - Controls and Decision Support Tools for Aviation",
+        "date": "2015",
+        "speakers": "Nhan Nguyen",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p1afomihlpa/"
+    },
+    {
+        "title": "Development of a “Where-to-Land” Decision Function for an Expert Piloting System (EPS) for piloted and autonomous air vehicles",
+        "date": "2015",
+        "speakers": "Jinu Idicula",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p141zjf8l1a/"
+    },
+    {
+        "title": "Developing an Adaptable NextGen Interface for the UAS Ground Control Station",
+        "date": "2015",
+        "speakers": "James Murphy",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p2qjjhr2jxv/"
+    },
+    {
+        "category": "Seedling Fund",
+        "subcategory": "Keynote",
+        "title": "Session Keynote 2015 Seedling Technical Seminar - Measurement Concepts",
+        "date": "2015",
+        "speakers": "Gary Hunter",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p1h653t3zop/"
+    },
+    {
+        "title": " Concept Demonstration of Dopant Selective Reactive Etching in Silicon Carbide",
+        "date": "2015",
+        "speakers": "Robert Okojie",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p2c0ccqu8bm/"
+    },
+    {
+        "title": "Flexible Micropost Arrays for Shear Stress Measurement",
+        "date": "2015",
+        "speakers": "Christopher Wohl",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p8qey8cco55/"
+    },
+    {
+        "title": "Biomimetic Fly Eye Sensor for Real-time Target Tracking",
+        "date": "2015",
+        "speakers": "Susan Frost",
+        "platform": "Adobe Connect",
+        "video": "http://ac.arc.nasa.gov/p29j0ljlkxw/"
+    },
+    {
+        "category": "IFAR",
+        "title": "IFAR Summit: Game Changers in Aeronautics Research",
+        "date": "2015",
+        "speakers": "Marlyn Andino, \nDaniel Boehnke, \nPervez Canteenwalla, \nMatthew Daigle, \nPaul Dees, \nAmin Fereidooni, \nRyota Kikuchi, \nTim Lewis, \nAna-Maria Neculaescu, \nJeffery Ouellette, \nDonghun Park, \nTiago Rebelo, \nShivanjli Sharma, \nRoger Tokars, \nValerie Weisner, \nKai Wicke, \nQun Yan, \nTatsunori Yuhara",
+        "organization": "Young Researcher Network",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p64u2avc4b2/"
+    },
+    {
+        "title": " Turboelectric Distributed Propulsion Test Bed Aircraft",
+        "date": "2015",
+        "speakers": "Michael Kerho ",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p1wrmf6k79a/"
+    },
+    {
+        "title": "Plasma-Assisted Combustor Dynamics Control",
+        "date": "2015",
+        "speakers": "Wookyung Kim",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p29j0ld28qa/"
+    },
+    {
+        "title": "Centrifugally Powered Pneumatic De-Icing for Helicopter Rotor Blades",
+        "date": "2015",
+        "speakers": "Matthew Drury (for Jose Palacios)",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6ksb0k8avy/"
+    },
+    {
+        "title": "Cooperative Gust Sensing and Suppression for Aircraft Formation Flight",
+        "date": "2015",
+        "speakers": "Yu Gu",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p27eg8bylc4/?archiveOffset=526000"
+    },
+    {
+        "category": "The LEARN Project",
+        "subcategory": "Keynote",
+        "title": "Session Keynote 2015 LEARN Technical Seminar",
+        "date": "2015",
+        "speakers": "Michael Dudley",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p27eg8bylc4/"
+    },
+    {
+        "category": "IFAR",
+        "title": "IFAR Young Researchers Virtual Conference between NRC and TsAGI on Alternative Fuels",
+        "date": "2015",
+        "speakers": "Andrey Shustov, \nSemyon Mikhalov, \nPervez Canteenwalla, \nSangsig Yun",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7z4cwws0uh/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: GoFlyUp HeroX $2 Million Personal VTOL Prize",
+        "date": "2015",
+        "speakers": "Gwen Lighter",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p64u2aoqulz/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Road Mapping Example for On-Demand Mobility",
+        "date": "2015",
+        "speakers": "Ken Goodrich",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6eelxbmdpq/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Advances in Distributed Propulsor Acoustic Modeling",
+        "date": "2015",
+        "speakers": "Steve Rizzi",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p9i2axek5rh/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Electric Propulsion & Electric Energy Storage Technologies",
+        "date": "2015",
+        "speakers": "JoeBen Bivert, \nMichael Sinkula, \nJosh Buettner Garrett, \nMike Ricci, \nRory Keogh, \nTim Moser, \nNick Borer",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6nme5sazcg/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Business and Market Opportunities",
+        "date": "2015",
+        "speakers": "Mark Moore, \nRich Ouellette, \nKevin Antcliff ",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p6v2dfe2v0k/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Advanced Batteries Progress",
+        "date": "2015",
+        "speakers": "Aron Newman",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p5loz1exuzi/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Advanced Vertiport Capable Flight Concepts",
+        "date": "2015",
+        "speakers": "Michael Duffy, \nAlex Stoll, \nKorbinian Petermaier, \nBill Fredericks, \nAndy Gibson",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7xpbc3rwu3/"
+    },
+    {
+        "category": "Transformative Vertical Flight",
+        "title": "2015 TVF Workshop: Welcome",
+        "date": "2015",
+        "speakers": "Tom Edwards",
+        "platform": "Adobe Connect",
+        "video": "https://ac.arc.nasa.gov/p7sqntp8ojp/"
+    },
+    {
+        "category": "Talks",
+        "subcategory": "NARI at UTM Convention",
+        "title": "UTM Convention NASA Aeronautics Talks - Introduction from NASA UTM Project Lead\n(2015)",
+        "description": "NASA partnered with Silicon Valley Chapter-AUVSI (Association of Unmanned Vehicle Systems International) to co-host the Unmanned Aerial Systems Traffic Management (UTM) Convention—or UTM 2015.\n\nThe convention was held at NASA Ames Research Center at Moffett Field, CA from July 28-30 and attracted broad participation and representation from different segments, including industry, government, and academia. The three-day event focused on policy-related considerations, such as privacy, safety, and security, in addition to emerging UAS markets and their operational objectives, economic benefits, technology readiness, and local and international perspectives.\n\nWe anticipate a widespread increase of low-altitude UAS as they become more commercially available, easier to use, and adaptable to more useful applications that will rely on remotely piloted and fully autonomous systems.  Air traffic management is essential to advance UAS technology and their capabilities in a safe, responsible, and manageable way. The UTM convention is a forum to discuss what’s possible, identify UTM design requirements, and formulate next steps. Listen to what people are saying and join the conversation in July.\n\n",
+        "date": "2015",
+        "speakers": "Joseph Rios (NASA Associate Administrator for the Aeronautics Research Mission Directorate)",
+        "organization": "NASA, Silicon Valley AUVSI (Association of Unmanned Vehicle Systems International)",
+        "platform": "YouTube",
+        "video": "https://www.youtube.com/watch?v=tD6HvLGI8JQ"
+    },
+    {
+        "category": "Talks",
+        "subcategory": "NARI at UTM Convention",
+        "title": "UTM Convention NARI Talks - Introduction from NASA Project Manager - Safe Autonomous System Operations Project\n(2015)",
+        "description": "NASA partnered with Silicon Valley Chapter-AUVSI (Association of Unmanned Vehicle Systems International) to co-host the Unmanned Aerial Systems Traffic Management (UTM) Convention—or UTM 2015.\n\nThe convention was held at NASA Ames Research Center at Moffett Field, CA from July 28-30 and attracted broad participation and representation from different segments, including industry, government, and academia. The three-day event focused on policy-related considerations, such as privacy, safety, and security, in addition to emerging UAS markets and their operational objectives, economic benefits, technology readiness, and local and international perspectives.\n\nWe anticipate a widespread increase of low-altitude UAS as they become more commercially available, easier to use, and adaptable to more useful applications that will rely on remotely piloted and fully autonomous systems.  Air traffic management is essential to advance UAS technology and their capabilities in a safe, responsible, and manageable way. The UTM convention is a forum to discuss what’s possible, identify UTM design requirements, and formulate next steps. Listen to what people are saying and join the conversation in July.\n",
+        "date": "2015",
+        "speakers": "Parimal Kopardekar (NASA Project Manager - Safe Autonomous System Operations Project)",
+        "organization": "NASA, Silicon Valley AUVSI (Association of Unmanned Vehicle Systems International)",
+        "platform": "YouTube",
+        "video": "https://www.youtube.com/watch?v=4MKsBGYp_dA"
+    },
+    {
+        "category": "Talks",
+        "subcategory": "NARI at UTM Convention",
+        "title": "UTM Convention NARI Talks - Welcome from President - Silicon Valley AUVSI\n(2015)",
+        "description": "NASA partnered with Silicon Valley Chapter-AUVSI (Association of Unmanned Vehicle Systems International) to co-host the Unmanned Aerial Systems Traffic Management (UTM) Convention—or UTM 2015.\n\nThe convention was held at NASA Ames Research Center at Moffett Field, CA from July 28-30 and attracted broad participation and representation from different segments, including industry, government, and academia. The three-day event focused on policy-related considerations, such as privacy, safety, and security, in addition to emerging UAS markets and their operational objectives, economic benefits, technology readiness, and local and international perspectives.\n\nWe anticipate a widespread increase of low-altitude UAS as they become more commercially available, easier to use, and adaptable to more useful applications that will rely on remotely piloted and fully autonomous systems.  Air traffic management is essential to advance UAS technology and their capabilities in a safe, responsible, and manageable way. The UTM convention is a forum to discuss what’s possible, identify UTM design requirements, and formulate next steps. Listen to what people are saying and join the conversation in July.\n",
+        "date": "2015",
+        "speakers": "Jesse Kallman (Silicon Valley AUVSI President)",
+        "organization": "NASA, Silicon Valley AUVSI (Association of Unmanned Vehicle Systems International)",
+        "platform": "YouTube",
+        "video": "https://www.youtube.com/watch?v=TU7LpyNbW0w"
+    },
+    {
+        "category": "Talks",
+        "subcategory": "NARI at UTM Convention",
+        "title": "UTM Convention NARI Talks - Welcome from NASA Associate Administrator for the Aeronautics Research Mission Directorate\n(2015)",
+        "description": "NASA partnered with Silicon Valley Chapter-AUVSI (Association of Unmanned Vehicle Systems International) to co-host the Unmanned Aerial Systems Traffic Management (UTM) Convention—or UTM 2015.\n\nThe convention was held at NASA Ames Research Center at Moffett Field, CA from July 28-30 and attracted broad participation and representation from different segments, including industry, government, and academia. The three-day event focused on policy-related considerations, such as privacy, safety, and security, in addition to emerging UAS markets and their operational objectives, economic benefits, technology readiness, and local and international perspectives.\n\nWe anticipate a widespread increase of low-altitude UAS as they become more commercially available, easier to use, and adaptable to more useful applications that will rely on remotely piloted and fully autonomous systems.  Air traffic management is essential to advance UAS technology and their capabilities in a safe, responsible, and manageable way. The UTM convention is a forum to discuss what’s possible, identify UTM design requirements, and formulate next steps. Listen to what people are saying and join the conversation in July.\n",
+        "date": "2015",
+        "speakers": "Dr. Jaiwon Shin (NASA Associate Administrator for the Aeronautics Research Mission Directorate)",
+        "organization": "NASA, Silicon Valley AUVSI (Association of Unmanned Vehicle Systems International)",
+        "platform": "YouTube",
+        "video": "https://www.youtube.com/watch?v=1tf0Mx5qA7k"
+    },
+    {
+        "title": "SBIR Market Research Meeting- Flight Test and Measurements Techniques & Physics-Based Computational Tools",
+        "date": "2015",
+        "speakers": "Starr Ginn, Erik Olson",
+        "video": "https://ac.arc.nasa.gov/p2zekbn78xi/"
+    },
+    {
+        "category": "IFAR",
+        "title": "Marcus Johnson, Andrew Cone, Adriana Andreeva-Mori, Eiichi Yoshikawa - IFAR Event: NASA/JAXA Virtual Conference on Air Traffic Management on May 20 (USA)/May 21 (Japan), 2015\n(2015)",
+        "date": "2015",
+        "video": "https://www.youtube.com/watch?v=1tf0Mx5qA7k"
+    },
+    {
+        "title": "Saullo Castro, Michela Alfano, Linus Friedrich, Regina Khakimova, Jendi Kepple - PART 2: 3rd International Conference on Buckling and Postbuckling Behaviour of Laminated Shell Structures with DESICOS Workshop\n(2015)",
+        "date": "2015",
+        "video": "http://short.arc.nasa.gov/ifar2"
+    },
+    {
+        "title": "Richard Degenhardt, Martin Ruess (for Ke Liang), Alexander Meurer, Saullo Castro - PART 1: 3rd International Conference on Buckling and Postbuckling Behaviour of Laminated Shell Structures with DESICOS Workshop\n(2015)",
+        "date": "2015",
+        "video": "http://short.arc.nasa.gov/ifar1"
+    },
+    {
+        "title": "John W Lawson - Enabling Electric Aviation with Ultra High Energy Lithium Metal Batteries\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p12a6jt5uqq/"
+    },
+    {
+        "title": "Jayanta Panda - Molecular Rayleigh scattering to measure fluctuations in density, velocity and temperature in wind tunnel environments\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p18nvmwevh8/"
+    },
+    {
+        "title": "Michael J Aftosmis - Adaptive Shape Parameterization for Aerodynamic Design\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p972ppmgpd6/"
+    },
+    {
+        "category": "Seedling Fund",
+        "title": "Michael Rogers - 2015 Spring Seedling Seminar Keynote, Session 2\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p61n7qom7ea/"
+    },
+    {
+        "title": "Joseph G Smith - Hydrogen-Bonding Surfaces for Ice Mitigation\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p2o27prn8q9/"
+    },
+    {
+        "title": "Carl H Gerhold - Adaptive Back Sheet Material for Acoustic Liner Applications\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p3sgylc90gx/"
+    },
+    {
+        "title": "James A DiCarlo - Ultra High Temperature (UHT) Silicon Carbide Fiber\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p4jrjwk5t9k/"
+    },
+    {
+        "title": "M. Clara Wright - Self-Repairing Fatigue Damage in Metallic Structures for Aerospace Vehicles Using Liquid-Assisted Shape Memory Alloy Self-Healing (SMASH) Technology\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p3f01mtd41v/"
+    },
+    {
+        "category": "Seedling Fund",
+        "title": "Richard Barhydt - 2015 Spring Seedling Seminar Keynote, Session 1\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p7jvmyxa5i2/"
+    },
+    {
+        "title": "Von Karman Institute (VKI) for Fluid Dynamics PhD Research Symposium",
+        "date": "2015",
+        "speakers": "Jaiwon Shin, \nSara Ruiz Gonzalez, \nGabriele Grasso, \nCis De Maesschalck",
+        "video": "https://ac.arc.nasa.gov/p3hu4s6bbyd/"
+    },
+    {
+        "title": "Semi-Autonomous Flight Environment Tug (SAFETUG)",
+        "date": "2015",
+        "speakers": "Robert Morris",
+        "video": "https://ac.arc.nasa.gov/p2orqhuz3li/"
+    },
+    {
+        "title": "System Safety for Highly Distributed Air Traffic Management",
+        "date": "2015",
+        "speakers": "Nancy Leveson",
+        "video": "https://ac.arc.nasa.gov/p6wu6diindx/"
+    },
+    {
+        "title": "Novel, Multidisciplinary Global Optimization under Uncertainty",
+        "date": "2015",
+        "speakers": "Aditya Saraf",
+        "video": "https://ac.arc.nasa.gov/p3stpz9dxsn/"
+    },
+    {
+        "subcategory": "Keynote",
+        "title": "Air Traffic Management Session Welcome and Keynote",
+        "date": "2015",
+        "speakers": "Leighton Quon",
+        "video": "https://ac.arc.nasa.gov/p4lw49c7gif/"
+    },
+    {
+        "title": "Joseph Grady - A Fully Non-Metallic Gas Turbine Engine Enabled by Additive Manufacturing\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p3cipvdc3rq/"
+    },
+    {
+        "title": "Joaquim Martins - Scalable Multifidelity Design Optimization: Next Generation Aircraft and their Impact on the Air Transportation System\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p4vgnvzcmu1/"
+    },
+    {
+        "title": "Karthikeyan Duraisamy - A Framework for Turbulence Modeling Using Big Data\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p1o9cy6ley0/"
+    },
+    {
+        "title": "Jim Heidmann - Models to Manufacturing Session Welcome and Keynote\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p3fct0qrony/"
+    },
+    {
+        "title": "Mark D Moore - Affordable Flight Testing of the e-ATLIT Distributed Electric Advanced Concept\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p3vb1qgknsv/"
+    },
+    {
+        "title": "Kristin Y Rozier - Intelligent Hardware-Enabled Sensor and Software Safety and Health Management for Autonomous UAS\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p8rh8dsei1p/"
+    },
+    {
+        "title": "Sean Swei - Active Wing Shaping Control Concept Using Composite Lattice-based Cellular Materials\n(2015)",
+        "date": "2015",
+        "video": "https://ac.arc.nasa.gov/p71g2hqr3au/"
+    },
+    {
+        "category": "Seedling Fund",
+        "subcategory": "Keynote",
+        "title": "Seedling Concepts to Flight Session Welcome and Keynote",
+        "date": "2015",
+        "speakers": "Douglas Rohn",
+        "video": "https://ac.arc.nasa.gov/p39bvbtc3a6/"
+    },
+    {
+        "category": "IFAR",
+        "title": "International Forum for Aviation Research - IFAR-NARI Virtual Conference\n(2014)",
+        "date": "2014",
+        "video": "https://ac.arc.nasa.gov/p5m1qehwr4d/"
+    },
+    {
+        "title": "George Szatkowski - Open Circuit Resonant (SansEC) Sensor Technology for Lightning Mitigation and Damage Detection and Diagnosis for Composite Aircraft Applications\n(2014)",
+        "date": "2014",
+        "video": "https://ac.arc.nasa.gov/p117wcnt8hg/"
+    },
+    {
+        "title": "Andrew Stubbs and Matthew Verminski - Kiva: Challenges of Autonomy\n(2014)",
+        "date": "2014",
+        "video": "https://ac.arc.nasa.gov/p6iaz82qww8/"
+    },
+    {
+        "title": "Kristin Y Rozier - No More Helicopter Parenting: Intelligent Autonomous UAS's (part of Ames Director's Colloquium Series)\n(2014)",
+        "date": "2014",
+        "video": "https://www.youtube.com/watch?v=FTxT-fbCleA&list=UUggQcRNVNRaH3uEb4nqf0zg"
+    },
+    {
+        "category": "NASA",
+        "title": "Next Generation Vertical Lift Research at NASA",
+        "date": "2014",
+        "speakers": "Susan Gorton",
+        "video": "https://ac.arc.nasa.gov/p18nvm7xbcx/"
+    },
+    {
+        "title": "Fixing the Sound Barrier: Three Generations of U.S. Research & Leadership in Sonic Boom Reduction & Supersonic Flight Technology",
+        "date": "2014",
+        "speakers": "Peter Coen",
+        "video": "https://ac.arc.nasa.gov/p389l4wceb3/"
+    },
+    {
+        "title": "Aerodynamic Testing from the US Navy to NASA",
+        "date": "2014",
+        "speakers": "Kurt Long",
+        "video": "https://ac.arc.nasa.gov/p99wsuaxd4c/"
+    },
+    {
+        "title": "Aerodynamics of Baseballs and the World Cup Soccer Ball (BRAZUCA)",
+        "date": "2014",
+        "speakers": "Rabindra D. Mehta",
+        "video": "https://ac.arc.nasa.gov/p5u78gbkghc/"
+    },
+    {
+        "title": "Real-Time Closed-Loop Modulated Turbine Cooling",
+        "date": "2014",
+        "speakers": "Vikram Shyam",
+        "video": "http://connect.arc.nasa.gov/p2kiltkuwbg/"
+    },
+    {
+        "title": "Holistic concepts for Aeropropulsion",
+        "date": "2014",
+        "speakers": "Vikram Shyam",
+        "video": "http://connect.arc.nasa.gov/p1uaaovgyhw/"
+    },
+    {
+        "title": "Liquefied Bleed",
+        "date": "2014",
+        "speakers": "John \"Dave\" Saunders",
+        "video": "http://connect.arc.nasa.gov/p9kjmpnd1r8/"
+    },
+    {
+        "category": "Seedling Fund",
+        "subcategory": "Keynote",
+        "title": "Session Welcome and Keynote for Seedling 2014 Propulsion Session",
+        "date": "2014",
+        "speakers": "Ruben Del Rosario",
+        "video": "http://connect.arc.nasa.gov/p4j215qt1s0/"
+    },
+    {
+        "title": "Paul M Danehy - Fluorescence–Doped Particles for Simultaneous Temperature and Velocity Imaging\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p43tb8cyi0u/"
+    },
+    {
+        "title": "Susan Frost - Bio-mimetic Optical Sensor for Real-time Measurement of Aircraft Wing Deflection\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p7p71x0xjtz/"
+    },
+    {
+        "title": "William Clifton Horne - Innovative, Low-cost Phased Microphone Array Design for Moderate-Scale Aeroacoustics tests\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p1ec1z58jtp/"
+    },
+    {
+        "title": "Jeffrey I Eldridge - Luminescence-Based Temperature Mapping at Turbine Engine Temperatures Using Breakthrough Cr-Doped GdAlO3\n(2014)",
+        "date": "2014",
+        "video": "https://connect.arc.nasa.gov/p84frueo8op/?launcher=false&fcsContent=true&pbMode=normal&archiveOffset=2674750"
+    },
+    {
+        "title": "Eric Burke - Scintillating Quantum Dots for Imaging X-rays (SQDIX) for Aircraft Inspection\n(2014)",
+        "date": "2014",
+        "video": "https://connect.arc.nasa.gov/p84frueo8op/"
+    },
+    {
+        "title": "Jacob D Hochhalter - Coupling Damage-sensing Particles and Computational Micromechanics to enable the Digital Twin concept\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p502k1zclme/"
+    },
+    {
+        "title": "Eric Madaras - Investigation of the Magneto-Acoustic Villari Effect for Measuring the Internal Stress in Composites\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p1hiwiot4ph/"
+    },
+    {
+        "category": "Seedling Fund",
+        "title": "Michael Mastaler - Session Welcome and Keynote for Seedling 2014 Measurement Technology and Testing Session\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p19degqne4c/"
+    },
+    {
+        "title": "Nikunj Oza - Reducing the Environmental Impact of Aviation: A Data Mining Approach to Instantaneous Estimation of Fuel Consumption\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p65wci8m8e7/"
+    },
+    {
+        "title": "Todd Lauderdale - Using Historical Data to Automatically Identify Air-Traffic Controller Behavior\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p7ouaiumrgi/"
+    },
+    {
+        "title": "David E Smith - Intelligent UAS Sense-and-Avoid utilizing Global Constraints\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p41bzh5k2a8/"
+    },
+    {
+        "title": "Michelle Eshow - Transforming the NextGen Test Environment: Integrating Fused ADS-B Surveillance Data\n(2014)",
+        "date": "2014",
+        "video": "https://connect.arc.nasa.gov/p3650u1mw6a/?launcher=false&fcsContent=true&pbMode=normal&archiveOffset=530000"
+    },
+    {
+        "category": "Seedling Fund",
+        "subcategory": "Keynote",
+        "title": "Barry Sullivan - Session Welcome and Keynote for Seedling 2014 Air Traffic Session\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p3650u1mw6a/"
+    },
+    {
+        "title": "Larry Young - Combined Electric Aircraft and Airspace Management Design for Metro-Regional Public Transportation\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p81lop12vh2/"
+    },
+    {
+        "title": "Kevin Reynolds - Wing Shaping Concepts Using Distributed Propulsion Control For Achieving Optimal Spanwise L/D To Reduce Fuel Burn\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p6wu6faa69d/"
+    },
+    {
+        "title": "Doug Wells - Low Energy Nuclear Reaction Aircraft\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p1zygzm2h3i/"
+    },
+    {
+        "category": "Seedling Fund",
+        "title": "Fay Collier - Session Welcome and Keynote for Seedling 2014 Aircraft Design Session\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p3m39jrpij2/"
+    },
+    {
+        "title": "Bruce Cogan - Flight validation of cruise efficient, low noise, extreme short takeoff and landing (CESTOL) and circulation control (CC) for drag reduction enabling technologies\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p4ip9rk4ra8/"
+    },
+    {
+        "title": "Martin Brenner - Physics-Based Stability and Control Derivative Measurement\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p92428pgk3j/"
+    },
+    {
+        "title": "Martin Brenner - Controller Performance Evaluation of Fly-by-Feel Technology\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p7itctx93k7/"
+    },
+    {
+        "title": "Jay Brandon - Real-Time Onboard Global Nonlinear Aerodynamic Modeling from Flight Data\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p3fct2i1uin/"
+    },
+    {
+        "title": "Frank Gern - Artificial Intelligence Based Control Power Optimization on Tailless Aircraft\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p4l6lirdepf/"
+    },
+    {
+        "title": "Michael Logan - Compound Wing Long Endurance V/TOL\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p1xh58ek6ff/"
+    },
+    {
+        "category": "Seedling Fund",
+        "title": "Starr Ginn - Session Welcome and Keynote for Seedling 2014 Aerodynamics and Control Session\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p89r6qyyyuc/"
+    },
+    {
+        "title": "Mary Ann Meador - Design and Development of Aerogel-Based Antennas for Aerospace Applications\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p9az336fn0e/"
+    },
+    {
+        "title": "Robert Okojie - Concept Demonstration of Dopant Selective Reactive Etching in Silicon Carbide\n(2014)",
+        "date": "2014",
+        "video": "https://connect.arc.nasa.gov/p8nkv3udf6m/"
+    },
+    {
+        "title": "Janet Hurst - Aligned Boron Nitride Nanotube Forests for Thermal Management\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p2hoio6s632/"
+    },
+    {
+        "title": "Sai V Raj - Development of Engineered Ceramic Matrix Composites\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p7k8eelv13v/"
+    },
+    {
+        "title": "Glen S Bigelow - Single Crystal High-Temperature Shape Memory Alloys\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p8cl9wcaou4/"
+    },
+    {
+        "title": "Jon Goldsby - High Temperature Magnetic Material with Temperature Capability Greater Than 500 C\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p5qav6o7908/"
+    },
+    {
+        "title": "Edward H Glaessgen - Deformation and Damage in Structurally Graded Nano-Crystalline Aluminum Alloys\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p7csf4zxd2v/"
+    },
+    {
+        "title": "Steve Wilkinson - Design and Evaluation of Enhanced Dielectric-Barrier-Discharge Actuators\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p879uzrgo8r/"
+    },
+    {
+        "title": "John Connell - Novel Bonding Methodologies Toward the Attainment of Primary Bonded Aircraft Structure\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p7s152do1wk/"
+    },
+    {
+        "title": "Carlos Calle - Graphene Based Ultra-Light Batteries for Aircraft\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p9lyoab9wjr/"
+    },
+    {
+        "category": "Seedling Fund",
+        "title": "Jim Heidmann - Session Welcome and Keynote for Seedling 2014 Materials Session\n(2014)",
+        "date": "2014",
+        "video": "http://connect.arc.nasa.gov/p1n72tf156s/"
+    },
+    {
+        "title": "Juan Alonso - Enabling Carbon-Free Commercial Aviation Through Integrated, High-Fidelity Conceptual Design\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p6vrw8ijiv1/"
+    },
+    {
+        "title": "Michael Kerho - Turboelectric Distributed Propulsion Test Bed Aircraft\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p76eq1nxwwe/"
+    },
+    {
+        "title": "M. Razi Nalim - Hybrid Wave-Rotor Electric Aero-Propulsion (HyWREAP)\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p73xeagnc17/"
+    },
+    {
+        "title": "Mark Maughmer - Exploration of a Slotted Airfoil Laminar Flow Control Concept\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p2qjji8dmie/"
+    },
+    {
+        "category": "The LEARN Project",
+        "title": "Fay Collier - Session Welcome and Keynote for LEARN 2013 Environmentally Responsible Aviation Concepts Session\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p7gc12gyfzp/"
+    },
+    {
+        "title": "Joseph Szefi - Full-scale Experimental Validation of Dynamic, Centrifugally Powered, Pneumatic Actuators for Active Rotor Blade Surfaces\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p3y54xci1nd/"
+    },
+    {
+        "title": "José Palacios - Design, Fabrication and Testing of a Centrifugally Powered Pneumatic De-Icing for Helicopter Rotor Blades\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p9k6vb7iwa7/"
+    },
+    {
+        "category": "The LEARN Project",
+        "title": "Susan Gorton - Session Welcome and Keynote for LEARN 2013 Rotorcraft Session\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p1a2x8thvwc/"
+    },
+    {
+        "title": "Mark Boddy - Separation Platform for Integrating Complex Avionics (SPICA)\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p1ec1yvuz1k/"
+    },
+    {
+        "title": "Lei Shi - Multichannel Sense-and-Avoid Radar for Small UAVs\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p7zh4bqjpta/"
+    },
+    {
+        "title": "Marcello Napolitano - Cooperative Gust Sensing and Suppression for Aircraft Formation Flight\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p7tsy0zw9v7/"
+    },
+    {
+        "title": "Alp Sehirlioglu - High Temperature Fuel Modulation for Improved Engine Performance\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p9hpjk06e01/"
+    },
+    {
+        "category": "The LEARN Project",
+        "title": "Starr Ginn - Session Welcome and Keynote for LEARN 2013 Controls and Flight Controls Session\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p81loorlfsh/"
+    },
+    {
+        "title": "Wookyung Kim - Plasma-Assisted Combustor Dynamics Control\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p458csrx7ki/"
+    },
+    {
+        "title": "Fanping Sun - Active Truss for Fast Response Tip Clearance Modulation\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p3a1e5o01gk/"
+    },
+    {
+        "category": "The LEARN Project",
+        "title": "Lou Povinelli - Session Welcome and Keynote for LEARN 2013 Propulsion and Combustion Session\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p4coc2dp38m/"
+    },
+    {
+        "title": "Jialai Wang - Poptube Technology, Enabling Multifunctional Hybrid Composites for Next Generation Aircrafts\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p7dupb9caho/"
+    },
+    {
+        "title": "Yi Lin - Lightweight Supercapacitors with Porous Nanocarbon Platforms\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p2wx8lb9523/"
+    },
+    {
+        "title": "Sean Gephart - Advanced Manufacturing of Ceramic Matrix Composites (CMC) By Innovative Field Assisted Sintering Technology (FAST)\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p7qyuvlzby8/"
+    },
+    {
+        "title": "Mrityunjay Singh - Additive Manufacturing of Ceramic Matrix Composites (CMCs) for Propulsion Systems\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p725lblb6ks/"
+    },
+    {
+        "category": "The LEARN Project",
+        "subcategory": "Keynote",
+        "title": "Session Welcome and Keynote for LEARN 2013 Materials and Materials Science Session",
+        "date": "2013",
+        "speakers": "Dan Williams",
+        "video": "http://connect.arc.nasa.gov/p725lblb6ks/"
+    },
+    {
+        "title": "Traffic Flow Management Overview and Challenges",
+        "date": "2013",
+        "speakers": "Shon Grabbe",
+        "video": "https://connect.arc.nasa.gov/p6f44q8umjz/"
+    },
+    {
+        "title": "NASA Ames Vertical Motion Simulator – A Facility Engineered for Realism",
+        "date": "2013",
+        "speakers": "Bimal Aponso",
+        "video": "http://connect.arc.nasa.gov/p1rg7j0mg77/"
+    },
+    {
+        "title": "Space Shuttle Computational Fluid Dynamics (CFD)",
+        "date": "2013",
+        "speakers": "Stuart Rogers",
+        "video": "http://connect.arc.nasa.gov/p1ls18962hk/"
+    },
+    {
+        "title": "Dynamic Weather Routes: The Search for Smarter Flight Routes",
+        "date": "2013",
+        "speakers": "Dave McNally",
+        "video": "http://connect.arc.nasa.gov/p88c55rjyae/"
+    },
+    {
+        "title": "Impact of Air Traffic Operations on the Environment",
+        "date": "2013",
+        "speakers": "Banavar Sridhar",
+        "video": "http://connect.arc.nasa.gov/p61zz5t7k7h/"
+    },
+    {
+        "title": "Overview of NASA's Next Generation Air Transportation System Airspace Research",
+        "date": "2013",
+        "speakers": "Harry Swenson",
+        "video": "http://connect.arc.nasa.gov/p5rpwqt93ej/"
+    },
+    {
+        "title": "Simulation System Fidelity Assessment at the Vertical Motion Simulator",
+        "date": "2013",
+        "speakers": "Steven Beard",
+        "video": "http://connect.arc.nasa.gov/p31j4p8rs3k/"
+    },
+    {
+        "title": "Thermo-mechanical Evaluation of Self-Healing Metallic Structures for Aerospace Vehicles Utilizing Shape Memory Alloys",
+        "date": "2013",
+        "speakers": "M. Clara Wright",
+        "video": "http://connect.arc.nasa.gov/p5acmg91uog/"
+    },
+    {
+        "title": "Flexible Nanopost Arrays for Direct Shear Stress Measurement",
+        "date": "2013",
+        "speakers": "Christopher Wohl",
+        "video": "http://connect.arc.nasa.gov/p5cty7g2sar/"
+    },
+    {
+        "title": "Self-Latching Shape Memory Piezocomposite Control Surface",
+        "date": "2013",
+        "speakers": "W. Keats Wilkie",
+        "video": "http://connect.arc.nasa.gov/p8rh8euvj59/"
+    },
+    {
+        "title": "Hydrogen-Bonding Surfaces for Ice Mitigation",
+        "date": "2013",
+        "speakers": "Joseph G Smith Jr.",
+        "video": "http://connect.arc.nasa.gov/p1hvnw5a4vc/"
+    },
+    {
+        "title": "Qamar A Shams - Infrasonic Tracking of Aircraft Wake Vortices\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p7j647e1ocw/"
+    },
+    {
+        "title": "Frank Ritzert - Structural Batteries for Hybrid Electric Propulsion System\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p3sgym5i93r/"
+    },
+    {
+        "title": "Christopher J Miller - Multifunctional Low Pressure Turbine for Core Noise Reduction, Improved Efficiency, and NOx Reduction\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p9a9k9ydqe9/"
+    },
+    {
+        "title": "John Lawson - Enabling Electric Aviation with Ultra High Energy Lithium Metal Anode Batteries\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p9rzlyjiuzl/"
+    },
+    {
+        "title": "Lee W Kohlman - Engineered Polymer Composites Through Electrospun Nanofiber Coating of Fiber Tows\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p984zwxa303/"
+    },
+    {
+        "title": "Loyd Hook - Development of a ‘Where-To-Land’ Decision Function for an Expert Piloting Systems (EPS) In Man-Rated Autonomous Air Vehicles\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p36hs7ifgyz/"
+    },
+    {
+        "title": "Carl Gerhold - Adaptive Back Sheet Material for Acoustic Liner Applications (no sound until 19:12)\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p2k5ueoqbqd/"
+    },
+    {
+        "title": "Frederick Dynys - In-situ Production of High Energy Nano- Fuels by Laser Ablation\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p2l84l7ez1w/"
+    },
+    {
+        "title": "Michael Doty - Active Noise Control of Radiated Noise From Jets\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p10v4zwksn1/"
+    },
+    {
+        "title": "Craig Brice - Functionally Tailored Multi-Component Composite Structures Via Additive Manufacturing\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p5c4ff3qusp/"
+    },
+    {
+        "title": "Vivake Asnani - The Vibration Ring - A Global Vibration and Noise Control Solution for Rotating Machines\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p8uo2yee6m2/"
+    },
+    {
+        "title": "Michael Aftosmis - Adaptive Shape Parameterization for Aerodynamic Design\n(2013)",
+        "date": "2013",
+        "video": "http://connect.arc.nasa.gov/p9u46bkinhb/"
+    },
+    {
+        "title": "Dean Kontinos - Combined Electric Aircraft and Airspace Management Design for Metro- Regional Public Transportation\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p9i2awkpp7g/"
+    },
+    {
+        "title": "Corey Ippolito - Integration and Control of Morphing Wing Structures for Fuel Efficiency/Performance\n(2012)",
+        "date": "2012",
+        "speakers": "Corey Ippolito",
+        "video": "http://connect.arc.nasa.gov/p4gkpco5p88/"
+    },
+    {
+        "title": "Jeff Eldridge - Luminescence-Based Temperature Mapping at Turbine Engine Temperatures Using Breakthrough Cr-Doped GdAlO3\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p1kpr0d6qal/"
+    },
+    {
+        "title": "Mary Ann Meador - Design and Development of Aerogel-Based Antennas for Aerospace Applications\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p3f01mgzids/"
+    },
+    {
+        "title": "Fred Dynys - Nano-rod Piezoelectrics for Icephobic Surfaces\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p8t91ck1ju0/"
+    },
+    {
+        "title": "Ashok Srivastava - Reducing the Environmental Impact of Aviation: A Data Mining Approach to Instantaneous Estimation of Fuel Consumption\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p7wa9ql7nty/"
+    },
+    {
+        "title": "Chad Frost - Autonomous Optical Collision Detection to Enable Unmanned Aircraft Systems in the National Airspace System\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p3stpz60ese/"
+    },
+    {
+        "title": "Michael Nathal - Three Dimensional Cellular Structures Enhanced By Shape Memory Alloys\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p3h4lzi18cz/"
+    },
+    {
+        "title": "Glenn Bigelow - Single Crystal High-Temperature Shape Memory Alloys\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p4wvpgkf921/"
+    },
+    {
+        "title": "Diana Santiago - Hybrid Boron Nitride Nanotubes – Carbon Nanostructures Supercapacitor with High Energy Density\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p6ucum7ujih/"
+    },
+    {
+        "title": "Jim Di Carlo - Ultra High Temperature Silicon Carbide Fiber\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p4eg4zn04dm/"
+    },
+    {
+        "title": "Sunil Kukreja - Sensor-Only System Identification for Structural Health Monitoring of Advanced Aircraft\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p3ko7x7sqps/"
+    },
+    {
+        "title": "Marty Brenner - Controller Performance Evaluation of Fly-by-Feel Technology\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p1d9rqrazr2/"
+    },
+    {
+        "title": "Jay Brandon - Nonlinear Aerodynamics Modeling using Fuzzy Logic\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p82b7fi7tly/"
+    },
+    {
+        "title": "Paul Danehy - Fluorescence-Doped Particles for Simultaneous Temperature and Velocity Imaging\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p25zemnxkzt/"
+    },
+    {
+        "title": "Mia Siochi - Enhanced Dielectric-Barrier-Discharge Body-Force Generation using Nanofoam Materials with Infused Catalytic Layer\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p8a3y3a6msk/"
+    },
+    {
+        "title": "John Connell - Novel Bonding Methodologies Toward the Attainment of Primary Bonded Aircraft Structure\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p1asfzk0evv/"
+    },
+    {
+        "title": "Ed Glaessgen - Deformation and Damage in Structurally Graded Nano-Crystalline Aluminum Alloys\n(2012)",
+        "date": "2012",
+        "video": "http://connect.arc.nasa.gov/p352qlnt6xl/"
+    }
+]
