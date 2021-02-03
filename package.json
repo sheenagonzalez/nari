@@ -3,20 +3,25 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.19.0",
     "core-js": "^3.6.5",
+    "firebase": "^8.2.5",
+    "googleapis": "^39.2.0",
     "nuxt": "^2.14.6",
     "vue": "^2.6.12",
+    "vue-add-to-calendar": "^1.0.7",
     "vue-clickaway": "^2.2.2",
-    "vue-multiselect": "^2.1.6"
+    "vue-multiselect": "^2.1.6",
+    "vue-textarea-autosize": "^1.1.1",
+    "vuetify": "^2.4.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
@@ -24,7 +29,11 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
+    "@nuxtjs/vuetify": "^1.11.3",
     "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.0"
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.0",
+    "vue-cli-plugin-vuetify": "~2.1.0",
+    "vuetify-loader": "^1.7.0"
   }
 }

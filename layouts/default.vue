@@ -14,6 +14,7 @@
 import AppHeader from '~/components/AppHeader.vue'
 import AppHeaderMobile from '~/components/AppHeaderMobile.vue'
 import AppFooter from '~/components/AppFooter.vue'
+
 export default {
 	components: {
 		AppHeader,
@@ -37,19 +38,19 @@ export default {
             eventsNavItems: [
                 {
                     sublink: 'Upcoming Events',
-                    path: ''
+                    path: '/events/upcoming_events'
                 },
                 {
                     sublink: 'Recent Highlights',
-                    path: '/recent_highlights'
+                    path: '/events/recent_highlights'
                 },
                 {
                     sublink: 'All Archives',
-                    path: '/all_archives'
+                    path: '/events/all_archives'
                 },
                 {
                     sublink: 'Calendar',
-                    path: ''
+                    path: '/events/calendar'
                 },
             ],
             aamNavItems: [
@@ -87,7 +88,7 @@ export default {
                 },
                 {
                     sublink: 'Database',
-                    path: '/events'
+                    path: '/events/all_archives'
                 },
 			],
 			resources: [

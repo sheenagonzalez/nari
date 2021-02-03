@@ -16,7 +16,7 @@
                     <fa :class="searchToggled ? 'search-expand' : 'search-minimize'" v-on:click="searchToggled = !searchToggled" icon="search" />
                     <input v-if="searchToggled" class="search-input" type="text" placeholder="Search ..." />
                 </div>
-                <div class="news"><nuxt-link to="/">News</nuxt-link></div>
+                <div class="news"><nuxt-link to="/#updates">News</nuxt-link></div>
             </div>
         </nav>
     </div>

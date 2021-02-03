@@ -7,7 +7,7 @@
                 <div class="card">
                     <p>NASA Aeronautics Research Institute</p>
                     <h1>Meeting future <br><b>aviation needs</b>.</h1>
-                    <nuxt-link class="about-button" to="/">About NARI ></nuxt-link>
+                    <nuxt-link class="about-button" to="/about">About NARI ></nuxt-link>
                 </div>
                 <!-- <div class="mission">
                     <p><fa v-on:click="showMission = !showMission" icon="info-circle" />Our Mission</p>
@@ -57,7 +57,7 @@
                     </div>
                     <!-- TO DO: Put link when events page is done -->
                     <!-- <nuxt-link to="~/pages/events">Go to Events ></nuxt-link> -->
-                    <div class="more"><nuxt-link to="">View Calendar ></nuxt-link></div>
+                    <div class="more"><nuxt-link to="/events/calendar">View Calendar ></nuxt-link></div>
                 </div>
             </div>
         </section>
@@ -68,7 +68,7 @@
             <div class="text">
                 <h2>Projects & Initiatives</h2>
                 <h1>Explore our current projects and initiatives.</h1>
-                <nuxt-link class="more" to="">Learn more ></nuxt-link>
+                <nuxt-link class="more" to="/projects">Learn more ></nuxt-link>
             </div>
             <div class="graphic">
                 <img class="graphic-main" src="~/assets/img/boeingBlendedWingBody-plane-illustration.svg" />

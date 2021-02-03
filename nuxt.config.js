@@ -27,6 +27,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '~/plugins/firebase.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -37,6 +38,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/fontawesome',
+    '@nuxtjs/vuetify',
   ],
 
   // Font awesome icons

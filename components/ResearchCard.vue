@@ -1,5 +1,5 @@
 <template>
-    <div v-bind:class="['card', isToggled ? 'toggledCard' : '']" v-on:click="isToggled = !isToggled">
+    <div v-bind:class="['card', isToggled ? 'toggledCard' : '']" v-on:click="isToggled = !isToggled" v-on-clickaway="away">
         <div class="header">
             <div class="expand button" v-show="!isToggled">
                 <span>EXPAND</span>
@@ -83,6 +83,7 @@
 </template>
 
 <script>
+import { mixin as clickaway } from "vue-clickaway";
 export default {
     name: "ResearchCard",
     props: [
@@ -106,6 +107,13 @@ export default {
             isToggled: false
         }
     },
+    mixins: [clickaway],
+    methods: {
+        away() {
+            this.isToggled = false;
+        }
+    }
+
 }
 </script>
 

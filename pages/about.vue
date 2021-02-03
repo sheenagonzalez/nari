@@ -126,8 +126,12 @@
                         <nuxt-link class="social-item" to="/"><fa :icon="['fab', 'instagram']" /></nuxt-link>
                     </div>
                 </div>
-                <form class="form">
+                <form class="form" netlify-honeypot="bot-field" name="contact" action="" method="post" netlify>
                     <p>Interested in learning more or exploring opportunities with us? Reach out to our team and we’ll be happy to help.</p>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p class="bot-detector">     
+                        <label>Don’t fill this out: <input name="bot-field"></label>   
+                    </p>
                     <label for="fname">First name
                         <input type="text" id="fname" name="fname" placeholder="First name" />
                     </label>
@@ -500,6 +504,9 @@ h2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 1rem;
+            .bot-detector {
+                display: none;
+            }
             p {
                 grid-column: 1 / 3;
             }
@@ -510,6 +517,7 @@ h2 {
                     font: $body;
                     padding: .75rem 1rem;
                     border-radius: $s-corner;
+                    background-color: white;
                 }
                 ::placeholder {
                     font: $caption;

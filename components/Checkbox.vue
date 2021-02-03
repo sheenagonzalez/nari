@@ -33,7 +33,7 @@ export default {
     display: block;
     max-width: 12rem;
     position: relative;
-    padding-left: 2rem;
+    padding: 0 0 0 2rem;
     margin-bottom: .5rem;
     cursor: pointer;
     -webkit-user-select: none;

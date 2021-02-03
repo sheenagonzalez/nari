@@ -1,5 +1,5 @@
 <template>
-    <div v-bind:class="['card', isToggled ? 'toggledCard' : '']" v-on:click="isToggled = !isToggled">
+    <div v-bind:class="['card', isToggled ? 'toggledCard' : '']" v-on:click="isToggled = !isToggled" v-on-clickaway="away">
         <div class="header">
             <div class="expand button" v-show="!isToggled">
                 <span>EXPAND</span>
@@ -77,6 +77,7 @@
 </template>
 
 <script>
+import { mixin as clickaway } from "vue-clickaway";
 export default {
     name: "Event",
     props: [
@@ -98,6 +99,7 @@ export default {
             isToggled: false
         }
     },
+    mixins: [clickaway],
     methods: {
         getThumbnailURL() {
             if (this.platform.toLowerCase() == 'adobe connect') {
@@ -115,6 +117,9 @@ export default {
             else {
                 return '/_nuxt/assets/img/plane-icon.svg';
             }
+        },
+        away() {
+            this.isToggled = false;
         }
     }
 }
