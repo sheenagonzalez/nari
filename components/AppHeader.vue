@@ -5,10 +5,10 @@
                 <Logo />
             </figure>
             <ul class="menu">
-                <li class="menu-item"><nuxt-link to="/about">About</nuxt-link></li>
+                <nuxt-link to="/about"><li class="menu-item">About</li></nuxt-link>
                 <Dropdown title="Events" :items="events" />
-                <li class="menu-item"><nuxt-link to="/research">Research</nuxt-link></li>
-                <li class="menu-item"><nuxt-link to="/projects">Projects</nuxt-link></li>
+                <nuxt-link to="/research"><li class="menu-item">Research</li></nuxt-link>
+                <nuxt-link to="/projects"><li class="menu-item">Projects</li></nuxt-link>
                 <Dropdown title="Advanced Air Mobility" :items="aam" />    
             </ul>
             <div class="right-container">
@@ -16,7 +16,7 @@
                     <fa :class="searchToggled ? 'search-expand' : 'search-minimize'" v-on:click="searchToggled = !searchToggled" icon="search" />
                     <input v-if="searchToggled" class="search-input" type="text" placeholder="Search ..." />
                 </div>
-                <div class="news"><nuxt-link to="/#updates">News</nuxt-link></div>
+                <nuxt-link to="/#updates"><div class="news">News</div></nuxt-link>
             </div>
         </nav>
     </div>
@@ -25,6 +25,7 @@
 <script>
 import Logo from "./Logo";
 import Dropdown from "./Dropdown";
+
 export default {
     name: "AppHeader",
     props: ["events", "aam"],
@@ -62,6 +63,7 @@ nav {
     .menu {
         @include row;
         margin-right: 1rem;
+
         &-item {
             padding: .5rem 1rem;
             color: white;

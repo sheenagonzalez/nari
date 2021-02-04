@@ -9,9 +9,9 @@
         <!-- Sub-menu -->
         <transition name="fade" appear>
         <div class="submenu" v-if="isOpen">
-            <div class="submenu-item" v-for="(item, i) in items" :key="i">
+            <div v-for="(item, i) in items" :key="i">
                 <nuxt-link :to=item.path>
-                    {{ item.sublink }}
+                    <div class="submenu-item">{{ item.sublink }}</div>
                 </nuxt-link>
             </div>
         </div>
