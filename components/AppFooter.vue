@@ -46,7 +46,11 @@
             <div class="subscribe">
                 <h1>Subscribe for updates.</h1>
                 <p>We send the latest news, opportunities and resources directly to your inbox when you sign up to our newsletter.</p>
-                <form>
+                <form netlify-honeypot="bot-field" name="subscribe" action="" method="post" netlify>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p class="bot-detector">     
+                        <label>Don’t fill this out: <input name="bot-field"></label>   
+                    </p>
                     <div class="field">
                         <fa class="field-icon" icon="envelope" />
                         <input class="field-input" type="text" placeholder="Enter your e-mail address" name="mail" required />
@@ -125,6 +129,9 @@ footer {
         }
         form {
             @include row;
+            .bot-detector {
+                display: none;
+            }
             .field {
                 @include field-wrapper;
                 margin-top: .5rem;
