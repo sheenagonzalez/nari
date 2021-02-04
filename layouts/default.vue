@@ -1,6 +1,7 @@
 <template>
 	<div>
         <AppHeader :events="eventsNavItems" :aam="aamNavItems" />
+        <Breadcrumbs />
         <Nuxt :view="view" />
         <AppFooter :resources="resources" :programs="programs" :events="events" :support="support" />
 		<!-- <AppHeader v-if="view != 'mobile'" :events="eventsNavItems" :aam="aamNavItems" /> -->
@@ -14,6 +15,7 @@
 import AppHeader from '~/components/AppHeader.vue'
 import AppHeaderMobile from '~/components/AppHeaderMobile.vue'
 import AppFooter from '~/components/AppFooter.vue'
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
 
 export default {
 	components: {
@@ -38,15 +40,15 @@ export default {
             eventsNavItems: [
                 {
                     sublink: 'Upcoming Events',
-                    path: '/events/upcoming_events'
+                    path: '/events/upcoming-events'
                 },
                 {
                     sublink: 'Recent Highlights',
-                    path: '/events/recent_highlights'
+                    path: '/events/recent-highlights'
                 },
                 {
                     sublink: 'All Archives',
-                    path: '/events/all_archives'
+                    path: '/events'
                 },
                 {
                     sublink: 'Calendar',

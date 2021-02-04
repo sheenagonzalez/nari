@@ -1,6 +1,5 @@
 <template>
     <div>
-        <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
         <img class="polygon background" src="~/assets/img/polygon.svg"/>
         <div class="main">
             <section id="researchNodes">
@@ -170,18 +169,6 @@ export default {
     },
     data() {
         return {
-            breadcrumbs: [
-                {
-                    text: 'Home',
-                    disabled: false,
-                    href: '/'
-                },
-                {
-                    text: 'Research',
-                    disabled: true,
-                    href: '/research'
-                },
-            ],
             search: '',
             programList: [
                 "The LEARN Project", 

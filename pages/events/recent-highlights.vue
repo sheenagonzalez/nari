@@ -1,5 +1,7 @@
 <template>
-    <Events :onHighlights="true" />
+    <div>
+        <Events :onHighlights="true" />
+    </div>
 </template>
 
 <script>

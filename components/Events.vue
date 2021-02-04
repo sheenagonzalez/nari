@@ -1,17 +1,16 @@
 <template>
     <div>
-        <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
         <div class="main">
             <section id="events">
                 <!-- Advanced Search (Side bar) -->
                 <div class="side-wrapper">
                     <nav class="sticky-nav">
                         <div :class="['switch', onHighlights ? 'on-highlights' : 'on-all']">
-                            <nuxt-link to="/events/recent_highlights" class="highlights" v-on:click="onHighlights = true">
+                            <nuxt-link to="/events/recent-highlights" class="highlights" v-on:click="onHighlights = true">
                                 <fa icon="star" />
                                 <p>HIGHLIGHTS</p>
                             </nuxt-link>
-                            <nuxt-link to="/events/all_archives" class="all" v-on:click="onHighlights = false">
+                            <nuxt-link to="/events" class="all" v-on:click="onHighlights = false">
                                 <p><b>ALL</b></p>
                             </nuxt-link>
                         </div>
@@ -202,18 +201,6 @@ export default {
     },
     data() {
         return {
-            breadcrumbs: [
-                {
-                    text: 'Home',
-                    disabled: false,
-                    href: '/'
-                },
-                {
-                    text: 'Archived Events',
-                    disabled: true,
-                    href: '/events'
-                },
-            ],
             search: '',
             fileTypesList: [
                 "Files",

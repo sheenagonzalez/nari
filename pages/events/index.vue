@@ -1,5 +1,7 @@
 <template>
-    <Events :onHighlights="false" />
+    <div>
+        <Events :onHighlights="false" />
+    </div>
 </template>
 
 <script>
@@ -14,9 +16,11 @@ export default {
                 name: 'description',
                 content: 'NASA Aeronautics Research Institute (NARI) operates at the nexus of industry, government and academia with an outward-facing approach to monitor trends and ...',
                 },
-            ]
+            ],
         }
     },
+    data() {
+    }
 }
 </script>
 

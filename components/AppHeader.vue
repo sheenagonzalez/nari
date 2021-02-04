@@ -25,7 +25,6 @@
 <script>
 import Logo from "./Logo";
 import Dropdown from "./Dropdown";
-
 export default {
     name: "AppHeader",
     props: ["events", "aam"],
@@ -63,7 +62,6 @@ nav {
     .menu {
         @include row;
         margin-right: 1rem;
-
         &-item {
             padding: .5rem 1rem;
             color: white;
