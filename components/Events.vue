@@ -77,17 +77,7 @@
                     />
                 </div>
             </section>
-            <!-- <section id="collaborators">
-                <img class="rectangle background" />
-                <img class="pattern-two background" src="~/assets/img/city-grid-pattern.svg"/>
-                <div>
-                    <h1>In <b>Collaboration</b> With</h1>
-                    <Carousel
-                        :visibleSlide="visibleSlide"
-                        :slides="slides"
-                    />
-                </div>
-            </section> -->
+            <EventCarousel :slides="slides" :visibleSlide="visibleSlide" />
         </div>
     </div>
 </template>
@@ -99,7 +89,7 @@ import Multiselect from "vue-multiselect";
 import eventsJson from "~/json/events.json";
 import highlightsJson from "~/json/highlights.json";
 import Pagination from "~/components/Pagination.vue";
-import Carousel from "~/components/Carousel.vue";
+import EventCarousel from "~/components/EventCarousel.vue";
 
 export default {
     name: "Events",
@@ -109,7 +99,7 @@ export default {
         Checkbox,
         Multiselect,
         Pagination,
-        Carousel,
+        EventCarousel,
     },
     methods: {
         // Update the page number
@@ -230,23 +220,56 @@ export default {
                 {
                     for: "Transformative Vertical Flight WG",
                     title: "Transformative Vertical Flight Working Groups",
-                    description: "",
-                    link: "",
-                    fileName: "",
-                    caption: "",
-                    credits: ""
+                    description: "Over the past four years a community of aerospace professionals that includes technical, regulatory, and business elements have been exploring the potential for new forms of air transportation systems.  Their focus has been on systems that embody combinations of on-demand, distributed electric propulsion, and vertiport capabilities. This community has been pursuing their interest through a series of Transformative Vertical Flight (TVF) workshops and working groups.\n\nThe objective of the Working Groups is to establish a formal means of continually refining current versions of the Transformative Vertical Flight Roadmap to create an increasingly compelling argument for pursuing this capability.\n\n This website serves as a portal to assist in the establishment, membership recruitment, and continued effective operation of TVF Roadmap Working Groups.  Individuals with an interest in contributing to the advancement and realization of Transformative Vertical Flight as a new form of air transportation are encouraged to volunteer as a TVF Working Group member.",
+                    subgroupHeader: "4 Primary Groups",
+                    subgroups: [
+                        {
+                            name: "Private/Recreational Vehicles",
+                            groupLead: "Charles Drew",
+                            blurb: "Short-range personal and recreational on-demand air transportation",
+
+                        },
+                        {
+                            name: "Commercial Intra-city",
+                            groupLead: "Yolanka Wulff and Darrell Swanson",
+                            blurb: "Short-range urban air-taxi, local package delivery, and air-crane lift systems",
+
+                        },
+                        {
+                            name: "Commercial Inter-city",
+                            groupLead: "Seren Weber",
+                            blurb: "Longer-range suburban and regional air transit systems, and regional air-transport package distribution",
+
+                        },
+                        {
+                            name: "Public Services",
+                            groupLead: "Johnny Doo",
+                            blurb: "TVF-enabled search and rescue, law enforcement, medical transport, emergency/humanitarian response, and military operations",
+
+                        },
+                    ],
+                    buttonLinkText: "Become A Member",
+                    buttonLink: "mailto:michael.a.tsairides@nasa.gov?subject=Transformative%20Vertical%20Flight%20Roadmap%20Development%20Working%20Group%20Membership%20Request%20&body=Transformative%20Vertical%20Flight%20Roadmap%20Development%20Working%20Group%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Membership%20Request%0A%0AYour%20Name%3A%0AEmail%3A%0AAffiliation%3A%0APhone%3A%0AWorking%20Group%20name%3A",
                 },
                 {
                     for: "IFAR",
                     title: "IFAR",
-                    description: "",
-                    link: "",
-                    fileName: "",
-                    caption: "",
-                    credits: ""
-                },
+                    description: "IFAR, the International Forum for Aviation Research, is the world's only aviation research establishment network. IFAR is established on a voluntary, non- binding basis. IFAR aims to connect research organisations worldwide, to enable the information exchange and communication on aviation research activities and to develop among its members a shared understanding on challenges faced by the global aviation research community. Our team is working with IFAR to create capabilities and events to support IFAR virtual events to enhance international collaboration in aeronautics research and connect the future leaders of the aviation industry.",
+                    subgroups: [
+                        {
+                            name: "Early Career Network (ECN)",
+                            blurb: ""
+                        },
+                        {
+                            name: "IFAR Virtual Exchange (IVX)",
+                            blurb: ""
+                        }
+                    ],
+                    buttonLinkText: "Visit Website",
+                    buttonLink: "https://ifarlink.aero/",
+                }
             ],
-            visibleSlide: 0,
+            visibleSlide: 0
         }
     },
     computed: {

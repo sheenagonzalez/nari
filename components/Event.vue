@@ -147,6 +147,7 @@ export default {
         position: absolute;
         right: 6.5rem;
         color: $med-blue;
+        cursor: pointer;
         svg {
             width: 1.5rem;
             height: 1.5rem;
@@ -243,6 +244,7 @@ export default {
     border-radius: $l-corner;
     color: white;
     transition: .2s;
+    cursor: default;
     &:hover {
         background-color: $med-blue;
         color: white;

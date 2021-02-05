@@ -73,7 +73,7 @@ export default {
                 },
                 {
                     title: "Regional Modeling",
-                    description: "Lorem ipsum dolor est pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit",
+                    description: "No information available yet. Check back soon.",
                     link: "",
                     fileName: "regional-modeling.png",
                 },
@@ -86,7 +86,6 @@ export default {
 <style scoped lang="scss">
 .header {
     position: relative;
-    margin-top: 2.5rem;
     width: 100%;
     height: 14rem;
     display: flex;

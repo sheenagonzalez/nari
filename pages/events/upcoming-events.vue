@@ -1,8 +1,19 @@
 <template>
     <div>
         <div class="header">
-            <h1><b>Upcoming</b> Events</h1>
-        </div>
+            <div class="bg">
+                <div class="strip" id="part-1">
+                    <img src="../../assets/img/city-grid-pattern.svg" />
+                </div>
+                <div class="strip" id="part-2">
+                    <img src="../../assets/img/city-grid-pattern.svg" />
+                </div>
+                <div class="strip" id="part-3">
+                    <img src="../../assets/img/city-grid-pattern.svg" />
+                </div>
+            </div>
+          <h1><b>Upcoming</b> Events</h1>
+      </div>
         <div class="updated">
             <p class="label">Last Updated</p>
             <p>{{ lastUpdated }}</p>
@@ -17,35 +28,13 @@
             :links="event.links"
             :imgFileName="event.image" />
         </div>
-        <add-to-calendar title="VueConf" 
-            location="WROCŁAW, POLAND" 
-            :start="new Date()"
-            :end="new Date((new Date).setDate((new Date).getDate() + 1))"
-            details="The first Official Vue.js Conference in the world!" 
-            inline-template>
-            <div>
-            
-                <google-calendar id="google-calendar">
-                <i class="fa fa-google"></i> Add to Google calendar
-                </google-calendar>
-                
-                <microsoft-calendar id="microsoft-calendar">
-                <i class="fa fa-windows"></i> Add to Microsoft live calendar
-                </microsoft-calendar>
-                
-                <office365-calendar id="office365-calendar">
-                <i class="fa fa-windows"></i> Add to Office365 outlook calendar
-                </office365-calendar>
-            </div>
-        </add-to-calendar>
+        <img class="polygon bg" src="~/assets/img/polygon.svg"/>
     </div>
 </template>
-<script src="/dist/vue-add-to-calendar.min.js"></script>
+
 <script>
 import UpcomingEvent from "~/components/UpcomingEvent.vue";
-var AddToCalendar = require('vue-add-to-calendar');
 
-Vue.use(AddToCalendar);
 export default {
     data() {
         return {
@@ -141,12 +130,52 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.bg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 .header {
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     h1 {
         font: $headline;
+        margin-left: 8.75rem;
+        text-align: left;
+    }
+    .bg {
+        position: absolute;
+        .strip {
+            img {
+                position: absolute;
+                top: 0;
+            }
+        }
+        #part-1 {
+            img {
+                transform: rotate(90deg) translate(-75%, 0);
+            }
+        }
+        #part-2 {
+            img {
+                transform: rotate(90deg) translate(-75%, -105%);
+            }
+        }
+        #part-3 {
+            img {
+                transform: rotate(90deg) translate(-75%, -210%);
+            }
+        }
     }
 }
 .updated {
+    height: 5rem;
+    @include column;
+    justify-content: center;
     .label {
         color: $bluish-grey;
     }
@@ -154,7 +183,19 @@ export default {
 .eventsList {
     margin-bottom: 1rem;
 }
-.eventsList, .updated, .header {
+.eventsList, .updated {
     margin: 0 8.75rem;
+}
+.polygon {
+    position: relative;
+    height: 2rem;
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        
+        object-fit: cover;
+        z-index: 100000;
+    }
 }
 </style>

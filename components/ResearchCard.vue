@@ -137,6 +137,7 @@ export default {
     .button {
         text-align: right;
         position: absolute;
+        cursor: pointer;
         right: 6.5rem;
         color: $med-blue;
         svg {
@@ -227,6 +228,7 @@ export default {
     border-radius: $l-corner;
     color: white;
     transition: .2s;
+    cursor: default;
     &:hover {
         background-color: $med-blue;
         color: white;

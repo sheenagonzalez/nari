@@ -7,14 +7,12 @@
             </div>
         </nav>
         <div class="slides">
-            <CarouselSlide v-for="(slide, i) in slides" :key="i"
+            <EventCarouselSlide v-for="(slide, i) in slides" :key="i"
                 :index="i"
                 :title="slide.title"
                 :description="slide.description"
-                :link="slide.link"
-                :fileName="slide.fileName"
-                :caption="slide.caption"
-                :credits="slide.credits"
+                :buttonLinkText="slide.buttonLinkText"
+                :buttonLink="slide.buttonLink"
                 :visibleSlide="visibleSlide"
             />
         </div>
@@ -22,12 +20,12 @@
 </template>
 
 <script>
-import CarouselSlide from "~/components/CarouselSlide.vue";
+import EventCarouselSlide from "~/components/EventCarouselSlide.vue";
 
 export default {
-    name: "Carousel",
+    name: "EventCarousel",
     components: [
-        CarouselSlide
+        EventCarouselSlide
     ],
     props: ["visibleSlide", "slides"],
     methods: {
