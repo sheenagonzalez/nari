@@ -8,7 +8,18 @@
                     <a target="_blank" :href="buttonLink" class="button">{{ buttonLinkText }}</a>
                 </div>
                 <div class="right">
-                    
+                    <h2>{{ subgroupHeader }}</h2>
+                    <div class="subgroup" v-for="(group, i) in subgroups" :key="i">
+                        <h2>{{ group.name }}</h2>
+                        <p class="groupLead" v-if="group.groupLead">Led by {{ group.groupLead }}</p>
+                        <p class="blurb" v-if="group.blurb">{{ group.blurb }}</p>
+                    </div>
+                    <div v-for="(link, l) in links" :key="l">
+                        <a class="link" :href="link.link" target="_blank">
+                            <h2>{{ link.name }}</h2>
+                            <fa icon="arrow-right" />
+                        </a>
+                    </div>
                 </div>
             </slot>
         </div>
@@ -18,7 +29,7 @@
 <script>
 export default {
     name: "EventCarouselSlide",
-    props: ["title", "description", "buttonLinkText", "buttonLink", "visibleSlide", "index"],
+    props: ["title", "description", "buttonLinkText", "buttonLink", "visibleSlide", "index", "subgroups", "subgroupHeader", "links"],
     computed: {
         imgLink() {
         // Return nothing for the default empty string
@@ -54,7 +65,6 @@ export default {
     transition: all 0s,
 }
 .slide {
-    white-space: pre-wrap;
     @include row;
     z-index: 1;
     width: 100%;
@@ -71,23 +81,44 @@ export default {
         }
         p {
             margin-bottom: 3rem;
+            white-space: pre-wrap;
         }
         .button {
             @include button;
         }
     }
     .right {
-        width: 51%;
-        img {
-            width: 100%;
+        @include column;
+        margin-top: 1rem;
+        width: 38%;
+        border-left: solid 1px $bluish-grey;
+        padding: 0 2rem;
+        h2 {
+            font: $subheadline;
         }
-        .caption {
-            margin-top: .75rem;
-            font: $caption;
-            line-height: 1.5;
+        .subgroup {
+            margin-top: 1.5rem;
+            .groupLead {
+                font: $caption;
+                margin: .25rem 0;
+            }
+            .blurb {
+                margin-top: .5rem;
+                white-space: pre-wrap;
+            }
         }
-        .credits {
-            font-style: italic;
+        .link {
+            margin-top: 1rem;
+            text-decoration: underline;
+            position: relative;
+            @include row;
+            h2 {
+                width: 17rem;
+                margin-bottom: .5rem;
+            }
+        }
+        .link:hover {
+            color: $light-blue;
         }
     }
 }

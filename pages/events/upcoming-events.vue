@@ -28,7 +28,7 @@
             :links="event.links"
             :imgFileName="event.image" />
         </div>
-        <img class="polygon bg" src="~/assets/img/polygon.svg"/>
+        <!-- <img class="polygon bg" src="~/assets/img/polygon.svg"/> -->
     </div>
 </template>
 

@@ -1,6 +1,14 @@
 <template>
     <div>
         <div class="main">
+            <div class="background polygon">
+                <div class="poly-dark">
+                    <img src="~/assets/img/polygon-dark.svg"/>
+                </div>
+                <div class="poly-light" v-if="!onHighlights">
+                    <img src="~/assets/img/polygon.svg"/>
+                </div>
+            </div>
             <section id="events">
                 <!-- Advanced Search (Side bar) -->
                 <div class="side-wrapper">
@@ -77,7 +85,11 @@
                     />
                 </div>
             </section>
-            <EventCarousel :slides="slides" :visibleSlide="visibleSlide" />
+            <section id="collaborators">
+                <img class="rectangle background" />
+                <img class="pattern-two background" src="~/assets/img/city-grid-pattern.svg"/>
+                <EventCarousel :slides="slides" :visibleSlide="visibleSlide" />
+            </section>
         </div>
     </div>
 </template>
@@ -248,6 +260,20 @@ export default {
 
                         },
                     ],
+                    links: [
+                        {
+                            name: "Introduction Video",
+                            link: "https://ac.arc.nasa.gov/p8dwe0bz61qi/"
+                        },
+                        {
+                            name: "Introduction Slides",
+                            link: "https://nari.arc.nasa.gov/sites/default/files/attachments/TVF%2BWG%2BIntro.pdf"
+                        },
+                        {
+                            name: "Membership Roster",
+                            link: "https://nari.arc.nasa.gov/tvf_wgmembers"
+                        }
+                    ],
                     buttonLinkText: "Become A Member",
                     buttonLink: "mailto:michael.a.tsairides@nasa.gov?subject=Transformative%20Vertical%20Flight%20Roadmap%20Development%20Working%20Group%20Membership%20Request%20&body=Transformative%20Vertical%20Flight%20Roadmap%20Development%20Working%20Group%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Membership%20Request%0A%0AYour%20Name%3A%0AEmail%3A%0AAffiliation%3A%0APhone%3A%0AWorking%20Group%20name%3A",
                 },
@@ -255,18 +281,26 @@ export default {
                     for: "IFAR",
                     title: "IFAR",
                     description: "IFAR, the International Forum for Aviation Research, is the world's only aviation research establishment network. IFAR is established on a voluntary, non- binding basis. IFAR aims to connect research organisations worldwide, to enable the information exchange and communication on aviation research activities and to develop among its members a shared understanding on challenges faced by the global aviation research community. Our team is working with IFAR to create capabilities and events to support IFAR virtual events to enhance international collaboration in aeronautics research and connect the future leaders of the aviation industry.",
+                    buttonLinkText: "Visit Website",
+                    buttonLink: "https://ifarlink.aero/",
                     subgroups: [
                         {
                             name: "Early Career Network (ECN)",
-                            blurb: ""
+                            blurb: "ECN aims to support the growth of young researchers with high potential for national and international leadership.",
+
                         },
                         {
-                            name: "IFAR Virtual Exchange (IVX)",
-                            blurb: ""
-                        }
+                            name: "IFAR Virtual Xchange (IVX)",
+                            blurb: "IFAR hosts virtual gatherings and conference talks to discuss contemporary topics surrounding aviation.",
+
+                        },
                     ],
-                    buttonLinkText: "Visit Website",
-                    buttonLink: "https://ifarlink.aero/",
+                    links: [
+                        {
+                            name: "Join ECN",
+                            link: "https://ifarlink.aero/ecn"
+                        }
+                    ]
                 }
             ],
             visibleSlide: 0
@@ -342,6 +376,22 @@ export default {
     z-index: -1;
     position: absolute;
     margin-top: -8rem;
+    .poly-dark {
+        object-fit: cover;
+        img {
+            object-position: 57rem;
+        }
+    }
+    .poly-light {
+        transform: rotate(90deg) translateY(75%);
+        object-fit: cover;
+        width: 50rem;
+        margin-top: 10rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 .main {
     h1 {
@@ -357,12 +407,12 @@ export default {
         font-weight: bold;
     }
     #events {
-        margin: 3rem 5rem;
+        margin: 0rem 5rem;
         display: flex;
         .sticky-nav {
             position: -webkit-sticky;
             position: sticky;
-            margin-top: 6rem;
+            margin-top: 6.5rem;
             top: 2rem;
             margin-bottom: 9.5rem;
             display: grid;
@@ -456,7 +506,7 @@ export default {
             @include row;
         }
     }
-    #research-programs {
+    #collaborators {
         margin: 6rem 0 6rem 3rem;
         min-height: 36rem;
         position: relative;

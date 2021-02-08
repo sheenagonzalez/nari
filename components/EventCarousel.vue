@@ -14,6 +14,9 @@
                 :buttonLinkText="slide.buttonLinkText"
                 :buttonLink="slide.buttonLink"
                 :visibleSlide="visibleSlide"
+                :subgroups="slide.subgroups"
+                :subgroupHeader="slide.subgroupHeader"
+                :links="slide.links"
             />
         </div>
     </div>

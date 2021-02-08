@@ -1,6 +1,8 @@
 <template>
     <div>
-        <img class="polygon background" src="~/assets/img/polygon.svg"/>
+        <div class="background polygon">
+            <img src="~/assets/img/polygon.svg"/>
+        </div>
         <div class="main">
             <section id="researchNodes">
                 <!-- Advanced Search (Side bar) -->
@@ -314,6 +316,15 @@ export default {
     position: absolute;
     margin-top: -8rem;
 }
+.polygon {
+    width: 90rem;
+    object-fit: cover;
+    img {
+        width: 100%;
+        height: 100%;
+        object-position: 0rem -6.75rem;
+    }
+}
 .main {
     h1 {
     font: $headline;
@@ -328,7 +339,7 @@ export default {
         font-weight: bold;
     }
     #researchNodes {
-        margin: 3rem 5rem;
+        margin: 0 5rem;
         display: flex;
         .sticky-nav {
             position: -webkit-sticky;
